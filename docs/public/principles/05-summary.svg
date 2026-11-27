@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 640" width="880" height="640" role="img" aria-labelledby="p05s-title p05s-desc">
+  <title id="p05s-title">集成显卡：本章五条要点</title>
+  <desc id="p05s-desc">五条要点：iGPU 与核心同封装，共享功耗上限、散热、Ring 和内存带宽，不是免费收益；核显倍频以 0.5x 即 50 MHz 为步进，与核心是两套设置，同款 HD 4600 在不同 SKU 上最高 1.25 GHz 或 1.15 GHz；CPU Graphics Voltage 是独立项，起手保持 Auto；真实瓶颈是内存带宽，双通道是底线，四条 DIMM 不增加通道；有独显时不建议超核显，验证要与 CPU 分开做。</desc>
+  <defs>
+    <pattern id="p05s-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="p05s-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="880" height="640" rx="18" fill="#0E1317"/>
+  <rect width="880" height="640" rx="18" fill="url(#p05s-grid)"/>
+  <rect width="880" height="640" rx="18" fill="url(#p05s-grid-major)"/>
+  <rect x="0.5" y="0.5" width="879" height="639" rx="18" fill="none" stroke="#26343C"/>
+
+  <text x="40" y="52" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#F0A03C" letter-spacing="1">FIG.P05-S</text>
+  <text x="160" y="54" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="28" font-weight="700" fill="#E6EDF1">本章要点</text>
+  <rect x="700" y="30" width="66" height="28" rx="14" fill="#12313A" stroke="#4FC3D9"/>
+  <text x="733" y="50" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="16" fill="#4FC3D9">5 条</text>
+  <text x="840" y="52" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.05</text>
+  <path d="M40 78H840" stroke="#26343C"/>
+
+  <!-- 01 -->
+  <rect x="40" y="100" width="800" height="94" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="42" y="122" width="4" height="46" rx="2" fill="#F0A03C"/>
+  <circle cx="82" cy="145" r="21" fill="#10181D" stroke="#F0A03C"/>
+  <text x="82" y="152" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#F0A03C">01</text>
+  <text x="125" y="135" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#E6EDF1">共享资源</text>
+  <text x="125" y="162" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">iGPU 与核心同封装，共享功耗上限、散热、Ring</text>
+  <text x="125" y="184" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">和内存带宽，所以核显超频不是免费收益。</text>
+
+  <!-- 02 -->
+  <rect x="40" y="200" width="800" height="94" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="42" y="222" width="4" height="46" rx="2" fill="#4FC3D9"/>
+  <circle cx="82" cy="245" r="21" fill="#10181D" stroke="#4FC3D9"/>
+  <text x="82" y="252" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#4FC3D9">02</text>
+  <text x="125" y="235" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#E6EDF1">两套倍频</text>
+  <text x="125" y="262" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">核显倍频以 0.5x（50 MHz）为步进，与核心是两套设置；</text>
+  <text x="125" y="284" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">同款 HD 4600 不同 SKU 最高 1.25/1.15 GHz [Intel]。</text>
+
+  <!-- 03 -->
+  <rect x="40" y="300" width="800" height="94" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="42" y="322" width="4" height="46" rx="2" fill="#F0A03C"/>
+  <circle cx="82" cy="345" r="21" fill="#10181D" stroke="#F0A03C"/>
+  <text x="82" y="352" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#F0A03C">03</text>
+  <text x="125" y="335" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#E6EDF1">独立电压</text>
+  <text x="125" y="362" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">CPU Graphics Voltage 是独立项，与核心电压无关，</text>
+  <text x="125" y="384" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">起手应保持 Auto。</text>
+
+  <!-- 04 -->
+  <rect x="40" y="400" width="800" height="94" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="42" y="422" width="4" height="46" rx="2" fill="#4FC3D9"/>
+  <circle cx="82" cy="445" r="21" fill="#10181D" stroke="#4FC3D9"/>
+  <text x="82" y="452" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#4FC3D9">04</text>
+  <text x="125" y="435" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#E6EDF1">带宽瓶颈</text>
+  <text x="125" y="462" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">真实瓶颈是内存带宽：双通道是底线；四条 DIMM</text>
+  <text x="125" y="484" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">不增加通道数，不能当作带宽升级。</text>
+
+  <!-- 05 -->
+  <rect x="40" y="500" width="800" height="94" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="42" y="522" width="4" height="46" rx="2" fill="#F0A03C"/>
+  <circle cx="82" cy="545" r="21" fill="#10181D" stroke="#F0A03C"/>
+  <text x="82" y="552" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#F0A03C">05</text>
+  <text x="125" y="535" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#E6EDF1">取舍</text>
+  <text x="125" y="562" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">有独显时不建议超核显；验证必须与 CPU 分开做，</text>
+  <text x="125" y="584" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">并留意核显负载抬高核心温度。</text>
+
+  <path d="M40 600H840" stroke="#26343C"/>
+  <text x="440" y="620" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">自测：合上页面，能否复述这 5 条？</text>
+</svg>

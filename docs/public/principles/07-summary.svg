@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 640" width="880" height="640" role="img" aria-labelledby="p07s-title p07s-desc">
+  <title id="p07s-title">电源与散热：本章五条要点</title>
+  <desc id="p07s-desc">五条要点：电源先看额定功率与 12V 输出，估算方法是 CPU 加显卡加其他 30~50 W，再留 30% 余量；接口是硬限制，CPU 供电插满、显卡 8 pin 数量提前数清、不靠转接线；TDP 只是参考，CPU 与散热器都一样，实际发热由电压、频率、负载决定；正压负压看进风量与出风量的对比，不是风扇数量；够不够看四条，频率不掉、留 10 °C、电源不重启且 12V 稳定、进出风温差明显。</desc>
+  <defs>
+    <pattern id="p07s-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="p07s-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="880" height="640" rx="18" fill="#0E1317"/>
+  <rect width="880" height="640" rx="18" fill="url(#p07s-grid)"/>
+  <rect width="880" height="640" rx="18" fill="url(#p07s-grid-major)"/>
+  <rect x="0.5" y="0.5" width="879" height="639" rx="18" fill="none" stroke="#26343C"/>
+
+  <text x="40" y="52" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#F0A03C" letter-spacing="1">FIG.P07-S</text>
+  <text x="160" y="54" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="28" font-weight="700" fill="#E6EDF1">本章要点</text>
+  <rect x="700" y="30" width="66" height="28" rx="14" fill="#12313A" stroke="#4FC3D9"/>
+  <text x="733" y="50" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="16" fill="#4FC3D9">5 条</text>
+  <text x="840" y="52" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.07</text>
+  <path d="M40 78H840" stroke="#26343C"/>
+
+  <!-- 01 -->
+  <rect x="40" y="100" width="800" height="94" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="42" y="122" width="4" height="46" rx="2" fill="#F0A03C"/>
+  <circle cx="82" cy="145" r="21" fill="#10181D" stroke="#F0A03C"/>
+  <text x="82" y="152" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#F0A03C">01</text>
+  <text x="125" y="135" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#E6EDF1">功率估算</text>
+  <text x="125" y="162" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">CPU + 显卡 + 其他 30~50 W，再留 30% 余量；</text>
+  <text x="125" y="184" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">电源先看额定功率和 12V 输出。</text>
+
+  <!-- 02 -->
+  <rect x="40" y="200" width="800" height="94" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="42" y="222" width="4" height="46" rx="2" fill="#4FC3D9"/>
+  <circle cx="82" cy="245" r="21" fill="#10181D" stroke="#4FC3D9"/>
+  <text x="82" y="252" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#4FC3D9">02</text>
+  <text x="125" y="235" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#E6EDF1">接口硬限制</text>
+  <text x="125" y="262" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">CPU 供电插满，显卡 8 pin 数量要提前数清，</text>
+  <text x="125" y="284" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">不要靠转接线。</text>
+
+  <!-- 03 -->
+  <rect x="40" y="300" width="800" height="94" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="42" y="322" width="4" height="46" rx="2" fill="#F0A03C"/>
+  <circle cx="82" cy="345" r="21" fill="#10181D" stroke="#F0A03C"/>
+  <text x="82" y="352" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#F0A03C">03</text>
+  <text x="125" y="335" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#E6EDF1">TDP 参考</text>
+  <text x="125" y="362" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">TDP 只是参考，CPU 的和散热器的都一样；</text>
+  <text x="125" y="384" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">实际发热由电压、频率、负载决定。</text>
+
+  <!-- 04 -->
+  <rect x="40" y="400" width="800" height="94" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="42" y="422" width="4" height="46" rx="2" fill="#4FC3D9"/>
+  <circle cx="82" cy="445" r="21" fill="#10181D" stroke="#4FC3D9"/>
+  <text x="82" y="452" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#4FC3D9">04</text>
+  <text x="125" y="435" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#E6EDF1">风道</text>
+  <text x="125" y="462" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">正压/负压看进风量与出风量的对比，不是风扇数量；</text>
+  <text x="125" y="484" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">正压 + 防尘网更利于长期维护。</text>
+
+  <!-- 05 -->
+  <rect x="40" y="500" width="800" height="94" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="42" y="522" width="4" height="46" rx="2" fill="#F0A03C"/>
+  <circle cx="82" cy="545" r="21" fill="#10181D" stroke="#F0A03C"/>
+  <text x="82" y="552" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#F0A03C">05</text>
+  <text x="125" y="535" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#E6EDF1">四条判断</text>
+  <text x="125" y="562" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">频率不掉、温度留 10 °C 余量、电源不重启且</text>
+  <text x="125" y="584" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">12V 稳定、进出风温差明显。</text>
+
+  <path d="M40 600H840" stroke="#26343C"/>
+  <text x="440" y="620" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">自测：合上页面，能否复述这 5 条？</text>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 640" width="880" height="640" role="img" aria-labelledby="p09s-title p09s-desc">
+  <title id="p09s-title">调参与体质：本章五条要点</title>
+  <desc id="p09s-desc">五条要点：频率优先、电压优先、折中三种思路只是取舍不同，新手从折中起步最稳；体质主要影响同频所需电压以及带来的功耗与温度，不改变耐压上限和该 SKU 的 Tjmax；电压、频率、温度是三角关系，固定两个第三个必然被约束；收敛流程是中间值起步、每次降 0.01 V 找边界、回加 0.01~0.02 V 余量、环境变化后重验；手动适合大雕与雷，Tuner 保守且不识别体质。</desc>
+  <defs>
+    <pattern id="p09s-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="p09s-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="880" height="640" rx="18" fill="#0E1317"/>
+  <rect width="880" height="640" rx="18" fill="url(#p09s-grid)"/>
+  <rect width="880" height="640" rx="18" fill="url(#p09s-grid-major)"/>
+  <rect x="0.5" y="0.5" width="879" height="639" rx="18" fill="none" stroke="#26343C"/>
+
+  <text x="40" y="52" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#F0A03C" letter-spacing="1">FIG.P09-S</text>
+  <text x="160" y="54" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="28" font-weight="700" fill="#E6EDF1">本章要点</text>
+  <rect x="700" y="30" width="66" height="28" rx="14" fill="#12313A" stroke="#4FC3D9"/>
+  <text x="733" y="50" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="16" fill="#4FC3D9">5 条</text>
+  <text x="840" y="52" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.09</text>
+  <path d="M40 78H840" stroke="#26343C"/>
+
+  <!-- 01 -->
+  <rect x="40" y="100" width="800" height="94" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="42" y="122" width="4" height="46" rx="2" fill="#F0A03C"/>
+  <circle cx="82" cy="145" r="21" fill="#10181D" stroke="#F0A03C"/>
+  <text x="82" y="152" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#F0A03C">01</text>
+  <text x="125" y="135" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#E6EDF1">三种思路</text>
+  <text x="125" y="162" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">频率优先、电压优先、折中只是取舍不同；</text>
+  <text x="125" y="184" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">新手从折中起步最稳。</text>
+
+  <!-- 02 -->
+  <rect x="40" y="200" width="800" height="94" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="42" y="222" width="4" height="46" rx="2" fill="#4FC3D9"/>
+  <circle cx="82" cy="245" r="21" fill="#10181D" stroke="#4FC3D9"/>
+  <text x="82" y="252" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#4FC3D9">02</text>
+  <text x="125" y="235" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#E6EDF1">体质影响</text>
+  <text x="125" y="262" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">主要影响同频所需电压，以及由此带来的功耗与温度；</text>
+  <text x="125" y="284" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">不改变耐压上限和该 SKU 的 Tjmax。</text>
+
+  <!-- 03 -->
+  <rect x="40" y="300" width="800" height="94" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="42" y="322" width="4" height="46" rx="2" fill="#F0A03C"/>
+  <circle cx="82" cy="345" r="21" fill="#10181D" stroke="#F0A03C"/>
+  <text x="82" y="352" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#F0A03C">03</text>
+  <text x="125" y="335" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#E6EDF1">三角关系</text>
+  <text x="125" y="362" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">电压、频率、温度是三角关系：固定两个，</text>
+  <text x="125" y="384" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">第三个必然被约束（经验模型）。</text>
+
+  <!-- 04 -->
+  <rect x="40" y="400" width="800" height="94" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="42" y="422" width="4" height="46" rx="2" fill="#4FC3D9"/>
+  <circle cx="82" cy="445" r="21" fill="#10181D" stroke="#4FC3D9"/>
+  <text x="82" y="452" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#4FC3D9">04</text>
+  <text x="125" y="435" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#E6EDF1">收敛流程</text>
+  <text x="125" y="462" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">中间值起步 → 每次降 0.01 V 找边界 → 回加</text>
+  <text x="125" y="484" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">0.01~0.02 V 余量 → 环境变化后重验。</text>
+
+  <!-- 05 -->
+  <rect x="40" y="500" width="800" height="94" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="42" y="522" width="4" height="46" rx="2" fill="#F0A03C"/>
+  <circle cx="82" cy="545" r="21" fill="#10181D" stroke="#F0A03C"/>
+  <text x="82" y="552" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#F0A03C">05</text>
+  <text x="125" y="535" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#E6EDF1">手动 vs Tuner</text>
+  <text x="125" y="562" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">手动适合大雕、雷、想可复现的场景；Tuner 适合</text>
+  <text x="125" y="584" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#C7D3D9">先跑起来，但按保守规则给值、不识别体质。</text>
+
+  <path d="M40 600H840" stroke="#26343C"/>
+  <text x="440" y="620" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">自测：合上页面，能否复述这 5 条？</text>
+</svg>

@@ -74,8 +74,4 @@ title: 缓存与 Ring
 
 ## 本章要点
 
-- Ring 连接核心、L3 缓存、内存控制器和核显，其频率就是 Cache Ratio；它决定的是访问延迟，不是算力。
-- Cache Ratio 不必与核心同频，追求性能时放在"核心 −300 MHz"到"核心同频"之间；Ring 高于核心没有收益，只会更热。日常可以先 Auto。
-- 缓存电压（`CPU Cache Voltage`）与核心电压是两套设置，作用于 uncore（含缓存/Ring）；Auto 起步，确认不稳后再以 0.01–0.02 V 为步进上调 `[经验]`。
-- 缓存不稳更像"轻载蓝屏、随机重启、加载崩溃"；核心不稳更像"满载蓝屏、一跑 FPU 就错"。
-- 缓存必须单独压（`Stress cache`）验证；**Cache 回 Auto 后故障消失**是判定缓存问题最快的判据。
+![图 3：本章五条要点总览——Ring 作用、Cache Ratio、缓存电压、症状分流、隔离判据；Ring 决定访问延迟而非算力，Cache Ratio 的区间是核心 −300 MHz 到同频，缓存电压独立作用于 uncore，Auto 起步，调整步进 0.01–0.02 V [经验]，轻载蓝屏偏缓存、满载蓝屏偏核心，Cache 回 Auto 后故障消失即缓存问题](/principles/04-summary.svg)
