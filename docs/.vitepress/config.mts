@@ -26,7 +26,8 @@ export default defineConfig({
             { text: '06 主板与芯片组', link: '/principles/06-motherboard' },
             { text: '07 电源与散热', link: '/principles/07-power-cooling' },
             { text: '08 稳定性验证', link: '/principles/08-stability' },
-            { text: '09 调参与体质', link: '/principles/09-tuning' }
+            { text: '09 调参与体质', link: '/principles/09-tuning' },
+            { text: '术语表', link: '/principles/glossary' }
           ]
         }
       ],
