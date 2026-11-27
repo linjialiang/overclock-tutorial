@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="960" height="480" role="img" aria-labelledby="p05a-title p05a-desc">
+  <title id="p05a-title">核显与核心共享什么</title>
+  <desc id="p05a-desc">核显与 CPU 核心在同一个封装里，通过 Ring 与内存控制器相连；三者共享封装功耗上限、同一套散热和系统内存带宽，所以核显超频不是免费收益。</desc>
+  <defs>
+    <pattern id="p05a-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="p05a-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="480" rx="18" fill="#0E1317"/>
+  <rect width="960" height="480" rx="18" fill="url(#p05a-grid)"/>
+  <rect width="960" height="480" rx="18" fill="url(#p05a-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="479" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P05-01</text>
+  <text x="184" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">核显与核心共享什么</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.05</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <!-- Package -->
+  <rect x="48" y="92" width="440" height="312" rx="14" fill="#101A1F" stroke="#33454F"/>
+  <text x="68" y="120" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CPU PACKAGE</text>
+
+  <rect x="72" y="136" width="180" height="84" rx="10" fill="#131C21" stroke="#26343C"/>
+  <text x="162" y="170" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">CPU 核心</text>
+  <text x="162" y="196" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">独立倍频 / 电压</text>
+
+  <rect x="284" y="136" width="180" height="84" rx="10" fill="#131C21" stroke="#4FC3D9"/>
+  <text x="374" y="170" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#4FC3D9">iGPU 核显</text>
+  <text x="374" y="196" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">独立倍频 / 电压</text>
+
+  <path d="M162 220V248M374 220V248M268 292V306" stroke="#33454F" stroke-width="2"/>
+
+  <rect x="72" y="248" width="392" height="44" rx="8" fill="#131C21" stroke="#26343C"/>
+  <text x="90" y="276" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#C9D8DE">Ring 环形总线</text>
+
+  <rect x="72" y="306" width="392" height="44" rx="8" fill="#131C21" stroke="#26343C"/>
+  <text x="90" y="334" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#C9D8DE">IMC 内存控制器</text>
+
+  <!-- Shared resources -->
+  <rect x="508" y="92" width="404" height="88" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="510" y="104" width="4" height="46" rx="2" fill="#F0A03C"/>
+  <text x="532" y="126" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">共享封装功耗</text>
+  <text x="532" y="156" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">核显负载挤占核心功耗预算</text>
+
+  <rect x="508" y="190" width="404" height="88" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="510" y="202" width="4" height="46" rx="2" fill="#EF7A6D"/>
+  <text x="532" y="224" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">共享散热</text>
+  <text x="532" y="254" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">核显发热让 CPU 温度一起升</text>
+
+  <rect x="508" y="288" width="404" height="88" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="510" y="300" width="4" height="46" rx="2" fill="#4FC3D9"/>
+  <text x="532" y="322" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">共享内存带宽</text>
+  <text x="532" y="352" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">核显没有独立显存</text>
+
+  <text x="480" y="444" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#F0A03C">核显超频不是免费收益：抢功耗、抢温度、抢带宽。</text>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="figP03A-title figP03A-desc">
+  <title id="figP03A-title">SPD、JEDEC 与 XMP 的关系</title>
+  <desc id="figP03A-desc">内存条上的 SPD 芯片同时记录 JEDEC 默认档和厂商预验证的 XMP 档，主板开 XMP 就是应用后者；DDR3-2400 的等效传输率是 2400 MT/s，实际时钟只有 1200 MHz，监控软件显示的是后者。</desc>
+  <defs>
+    <pattern id="figP03A-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="figP03A-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+    <marker id="figP03A-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#F0A03C"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="560" rx="18" fill="#0E1317"/>
+  <rect width="960" height="560" rx="18" fill="url(#figP03A-grid)"/>
+  <rect width="960" height="560" rx="18" fill="url(#figP03A-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="559" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P03-01</text>
+  <text x="202" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">SPD、JEDEC 与 XMP</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.03</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <!-- 内存条 -->
+  <rect x="56" y="106" width="180" height="196" rx="10" fill="#131C21" stroke="#26343C"/>
+  <rect x="74" y="124" width="44" height="32" rx="4" fill="#1B262C" stroke="#2A3A43"/>
+  <rect x="126" y="124" width="44" height="32" rx="4" fill="#1B262C" stroke="#2A3A43"/>
+  <rect x="74" y="164" width="44" height="32" rx="4" fill="#1B262C" stroke="#2A3A43"/>
+  <rect x="126" y="164" width="44" height="32" rx="4" fill="#1B262C" stroke="#2A3A43"/>
+  <rect x="78" y="220" width="104" height="48" rx="6" fill="#241A0F" stroke="#F0A03C"/>
+  <text x="130" y="250" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">SPD</text>
+  <rect x="68" y="286" width="12" height="14" rx="2" fill="#223038"/>
+  <rect x="86" y="286" width="12" height="14" rx="2" fill="#223038"/>
+  <rect x="104" y="286" width="12" height="14" rx="2" fill="#223038"/>
+  <rect x="122" y="286" width="12" height="14" rx="2" fill="#223038"/>
+  <rect x="140" y="286" width="12" height="14" rx="2" fill="#223038"/>
+  <rect x="158" y="286" width="12" height="14" rx="2" fill="#223038"/>
+  <rect x="176" y="286" width="12" height="14" rx="2" fill="#223038"/>
+  <rect x="194" y="286" width="12" height="14" rx="2" fill="#223038"/>
+  <rect x="212" y="286" width="12" height="14" rx="2" fill="#223038"/>
+
+  <line x1="240" y1="244" x2="310" y2="244" stroke="#F0A03C" stroke-width="3" marker-end="url(#figP03A-arrow)"/>
+  <text x="275" y="228" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">读参数表</text>
+
+  <!-- 两档 -->
+  <rect x="326" y="118" width="280" height="86" rx="14" fill="#131C21" stroke="#26343C"/>
+  <text x="350" y="148" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">JEDEC 默认</text>
+  <text x="350" y="180" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="19" fill="#8FA3AD">DDR3-1333 / 1600</text>
+
+  <rect x="326" y="212" width="280" height="90" rx="14" fill="#131C21" stroke="#F0A03C"/>
+  <text x="350" y="242" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">XMP 档</text>
+  <text x="350" y="270" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="19" fill="#F0A03C">DDR3-2400</text>
+  <text x="350" y="294" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#C9D8DE">11-13-13-30 · 1.65 V</text>
+
+  <!-- 两个提醒 -->
+  <rect x="630" y="118" width="282" height="86" rx="14" fill="#10181D" stroke="#2A3A43"/>
+  <text x="654" y="148" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">XMP = 内存超频</text>
+  <text x="654" y="180" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#EF7A6D">Intel 提示可能影响保修</text>
+
+  <rect x="630" y="212" width="282" height="90" rx="14" fill="#10181D" stroke="#2A3A43"/>
+  <text x="654" y="242" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">EXPO 仅 AM5 + DDR5</text>
+  <text x="654" y="272" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">DDR3/4：DOCP / A-XMP</text>
+  <text x="654" y="296" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">不能一概写成 EXPO</text>
+
+  <!-- 等效频率 -->
+  <rect x="48" y="332" width="864" height="140" rx="18" fill="#131C21" stroke="#26343C"/>
+  <text x="76" y="366" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">等效频率与实际时钟</text>
+
+  <rect x="76" y="382" width="190" height="56" rx="10" fill="#10181D" stroke="#2A3A43"/>
+  <text x="171" y="410" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="24" fill="#E6EDF1">1200 MHz</text>
+  <text x="171" y="432" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">实际时钟</text>
+
+  <text x="300" y="418" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="26" fill="#F0A03C">×2</text>
+
+  <rect x="334" y="382" width="210" height="56" rx="10" fill="#10181D" stroke="#4FC3D9"/>
+  <text x="439" y="410" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="24" fill="#4FC3D9">2400 MT/s</text>
+  <text x="439" y="432" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">等效传输率</text>
+
+  <text x="576" y="410" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">监控软件显示的是实际时钟</text>
+  <text x="576" y="438" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">不是只跑了一半</text>
+
+  <text x="48" y="516" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">1.65 V 属 DDR3 时代示例；XMP 2.0 / 3.0 参数不要跨代照搬。</text>
+</svg>

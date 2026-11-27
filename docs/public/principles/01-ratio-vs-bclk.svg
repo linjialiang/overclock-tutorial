@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="figP01B-title figP01B-desc">
+  <title id="figP01B-title">改倍频与改 BCLK 的差别</title>
+  <desc id="figP01B-desc">左栏改倍频只影响 CPU 核心，内存与 PCIe 不变，风险好归因，适合日常超频；右栏改 BCLK 会让 CPU、内存、PCIe 一起变，往往内存或 PCIe 先出问题，适合极限超频的细调。</desc>
+  <defs>
+    <pattern id="figP01B-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="figP01B-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="520" rx="18" fill="#0E1317"/>
+  <rect width="960" height="520" rx="18" fill="url(#figP01B-grid)"/>
+  <rect width="960" height="520" rx="18" fill="url(#figP01B-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="519" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P01-02</text>
+  <text x="202" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">改倍频 vs 改 BCLK</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.01</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <rect x="48" y="96" width="864" height="44" rx="12" fill="#10181D" stroke="#2A3A43"/>
+  <rect x="50" y="106" width="4" height="24" rx="2" fill="#4FC3D9"/>
+  <text x="78" y="124" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#C9D8DE">BCLK 是整机基准时钟：CPU、内存、PCIe 的频率都从它派生。</text>
+
+  <!-- 左：改倍频 -->
+  <rect x="48" y="156" width="408" height="300" rx="18" fill="#131C21" stroke="#26343C"/>
+  <rect x="50" y="178" width="4" height="44" rx="2" fill="#F0A03C"/>
+  <text x="78" y="196" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">改倍频</text>
+  <text x="78" y="222" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">只动一个齿轮</text>
+  <path d="M76 234H432" stroke="#26343C"/>
+
+  <text x="76" y="262" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">影响范围</text>
+
+  <circle cx="84" cy="282" r="5" fill="#F0A03C"/>
+  <text x="100" y="290" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">CPU 核心</text>
+  <text x="428" y="290" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#F0A03C">跟着变</text>
+
+  <circle cx="84" cy="314" r="5" fill="#566B76"/>
+  <text x="100" y="322" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#C9D8DE">内存</text>
+  <text x="428" y="322" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">不变</text>
+
+  <circle cx="84" cy="346" r="5" fill="#566B76"/>
+  <text x="100" y="354" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#C9D8DE">PCIe</text>
+  <text x="428" y="354" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">不变</text>
+
+  <path d="M76 374H432" stroke="#26343C"/>
+
+  <text x="76" y="400" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">风险</text>
+  <text x="428" y="400" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">电压/温度不够，好定位</text>
+
+  <text x="76" y="432" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">适合</text>
+  <text x="428" y="432" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#74D68C">日常超频、目标明确</text>
+
+  <!-- 右：改 BCLK -->
+  <rect x="504" y="156" width="408" height="300" rx="18" fill="#131C21" stroke="#26343C"/>
+  <rect x="506" y="178" width="4" height="44" rx="2" fill="#4FC3D9"/>
+  <text x="534" y="196" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">改 BCLK</text>
+  <text x="534" y="222" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">动整条传动轴</text>
+  <path d="M532 234H888" stroke="#26343C"/>
+
+  <text x="532" y="262" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">影响范围</text>
+
+  <circle cx="540" cy="282" r="5" fill="#4FC3D9"/>
+  <text x="556" y="290" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">CPU 核心</text>
+  <text x="884" y="290" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#4FC3D9">一起变</text>
+
+  <circle cx="540" cy="314" r="5" fill="#4FC3D9"/>
+  <text x="556" y="322" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">内存</text>
+  <text x="884" y="322" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#4FC3D9">一起变</text>
+
+  <circle cx="540" cy="346" r="5" fill="#4FC3D9"/>
+  <text x="556" y="354" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">PCIe</text>
+  <text x="884" y="354" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#4FC3D9">一起变</text>
+
+  <path d="M532 374H888" stroke="#26343C"/>
+
+  <text x="532" y="400" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">风险</text>
+  <text x="884" y="400" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#EF7A6D">内存或 PCIe 先崩</text>
+
+  <text x="532" y="432" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">适合</text>
+  <text x="884" y="432" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">极限超频、细调</text>
+
+  <text x="48" y="492" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">改倍频只动一个齿轮，改 BCLK 动整条传动轴——新手没有理由先碰 BCLK。</text>
+</svg>

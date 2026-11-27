@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="fig08a-title fig08a-desc">
+  <title id="fig08a-title">四类负载各压各的</title>
+  <desc id="fig08a-desc">CPU 负载主要压核心与缓存，电流相对平稳；FPU 与 AVX 负载压浮点单元和功耗，发热最高；内存负载压内存控制器与内存条；组合负载让多单元同时抢功耗与散热。一种负载通过不代表全稳，验证顺序是单项到组合。</desc>
+  <defs>
+    <pattern id="fig08a-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="fig08a-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="520" rx="18" fill="#0E1317"/>
+  <rect width="960" height="520" rx="18" fill="url(#fig08a-grid)"/>
+  <rect width="960" height="520" rx="18" fill="url(#fig08a-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="519" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P08-01</text>
+  <text x="152" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">四类负载，各压各的</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.08</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <text x="76" y="108" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">负载类型</text>
+  <text x="330" y="108" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">主要压什么</text>
+  <text x="580" y="108" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">能证明什么 / 常见表现</text>
+
+  <rect x="48" y="128" width="864" height="64" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="50" y="142" width="4" height="36" rx="2" fill="#F0A03C"/>
+  <text x="76" y="168" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#E6EDF1">CPU 负载</text>
+  <text x="330" y="168" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">核心、缓存</text>
+  <text x="580" y="156" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">基础稳定性</text>
+  <text x="580" y="180" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">电流相对平稳，最容易通过</text>
+
+  <rect x="48" y="200" width="864" height="64" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="50" y="214" width="4" height="36" rx="2" fill="#F0A03C"/>
+  <text x="76" y="240" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#E6EDF1">FPU / AVX</text>
+  <text x="330" y="240" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">浮点单元、功耗</text>
+  <text x="580" y="228" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">高热、高功耗下的稳定</text>
+  <text x="580" y="252" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">日常没事、一跑就崩常在这暴露</text>
+
+  <rect x="48" y="272" width="864" height="64" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="50" y="286" width="4" height="36" rx="2" fill="#F0A03C"/>
+  <text x="76" y="312" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#E6EDF1">内存负载</text>
+  <text x="330" y="312" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">内存控制器、内存条</text>
+  <text x="580" y="300" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">内存 / IMC 稳定性</text>
+  <text x="580" y="324" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">核心再稳，内存该错还是错</text>
+
+  <rect x="48" y="344" width="864" height="64" rx="12" fill="#10181D" stroke="#4FC3D9" stroke-dasharray="7 6"/>
+  <rect x="50" y="358" width="4" height="36" rx="2" fill="#4FC3D9"/>
+  <text x="76" y="384" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#C9D8DE">组合负载</text>
+  <text x="330" y="384" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">多单元同时工作</text>
+  <text x="580" y="372" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">最接近真实高负载</text>
+  <text x="580" y="396" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#7C929C">同时抢功耗与散热</text>
+
+  <text x="480" y="452" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">一种负载通过 ≠ 全稳：电流波形、电压跌落、温度都不同。</text>
+  <text x="480" y="486" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#4FC3D9">顺序：单项确认 → 组合确认</text>
+</svg>

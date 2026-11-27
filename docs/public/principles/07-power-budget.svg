@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" width="960" height="620" role="img" aria-labelledby="fig07a-title fig07a-desc">
+  <title id="fig07a-title">功率估算与 12 V 输出</title>
+  <desc id="fig07a-desc">按 CPU 满载加显卡满载再加其他部件 30 到 50 W 估算整机功率，再留 30% 余量；标称 500 W 电源的 12 V 40 A 约合 480 W；80Plus 只是效率认证；下方列出 ATX 3.0 的纹波与瞬态限值。</desc>
+  <defs>
+    <pattern id="fig07a-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="fig07a-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+    <clipPath id="fig07a-bar">
+      <rect x="48" y="132" width="400" height="34" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <rect width="960" height="620" rx="18" fill="#0E1317"/>
+  <rect width="960" height="620" rx="18" fill="url(#fig07a-grid)"/>
+  <rect width="960" height="620" rx="18" fill="url(#fig07a-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="619" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P07-01</text>
+  <text x="152" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">功率估算与 12 V</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.07</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <!-- 01 power budget -->
+  <text x="48" y="112" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#F0A03C">01</text>
+  <text x="78" y="112" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">满载估算：再加 30% 余量</text>
+
+  <rect x="48" y="132" width="400" height="34" rx="8" fill="#131C21" stroke="#26343C"/>
+  <g clip-path="url(#fig07a-bar)">
+    <rect x="48" y="132" width="80" height="34" fill="#F0A03C" opacity="0.85"/>
+    <rect x="128" y="132" width="160" height="34" fill="#4FC3D9" opacity="0.75"/>
+    <rect x="288" y="132" width="40" height="34" fill="#8FA3AD" opacity="0.5"/>
+    <rect x="328" y="132" width="120" height="34" fill="#74D68C" opacity="0.16"/>
+  </g>
+  <rect x="328.5" y="132.5" width="119" height="33" fill="none" stroke="#74D68C" stroke-dasharray="5 5" opacity="0.7"/>
+  <rect x="48" y="132" width="400" height="34" rx="8" fill="none" stroke="#26343C"/>
+
+  <text x="56" y="192" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#E6EDF1">CPU 100</text>
+  <text x="208" y="192" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#E6EDF1">显卡 200</text>
+  <text x="308" y="192" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#E6EDF1">其他 50</text>
+  <text x="388" y="192" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#74D68C">余量</text>
+
+  <text x="48" y="218" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">0</text>
+  <text x="448" y="218" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">500 W</text>
+
+  <text x="48" y="252" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">350 W × 1.3 ≈ 455 W</text>
+  <text x="48" y="282" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">→ 选 500 W 额定，不看「峰值」</text>
+
+  <!-- 02 12V -->
+  <text x="490" y="112" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#F0A03C">02</text>
+  <text x="520" y="112" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">12 V 输出与 80Plus</text>
+
+  <text x="490" y="162" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="26" fill="#F0A03C">12 V × 40 A ≈ 480 W</text>
+  <text x="490" y="192" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">标称 500 W，但 12V 这一行才决定上限</text>
+  <text x="490" y="222" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">单路：整块 12V 都给 CPU 与显卡</text>
+  <text x="490" y="250" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">多路：确认 CPU、显卡各接哪一路</text>
+  <text x="490" y="280" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#4FC3D9">80Plus 只是效率档位，不等于 12V 能力</text>
+
+  <!-- 03 ATX 3.0 -->
+  <text x="48" y="326" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#F0A03C">03</text>
+  <text x="78" y="326" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">ATX 3.0 纸面限值：软件读数看不到的部分</text>
+
+  <rect x="48" y="342" width="278" height="240" rx="14" fill="#131C21" stroke="#26343C"/>
+  <text x="70" y="380" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#E6EDF1">纹波 / 噪声</text>
+  <text x="70" y="406" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#4FC3D9">ATX 3.0 限值</text>
+  <text x="70" y="442" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">12V 120 mVp-p</text>
+  <text x="70" y="472" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">5V·3.3V 50 mVp-p</text>
+  <text x="70" y="502" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">测量带宽 20 MHz</text>
+  <text x="70" y="534" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">软件读数看不到高频成分</text>
+
+  <rect x="340" y="342" width="278" height="240" rx="14" fill="#131C21" stroke="#26343C"/>
+  <text x="362" y="380" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#E6EDF1">瞬态（大功率）</text>
+  <text x="362" y="406" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#4FC3D9">&gt;450 W 且带 12VHPWR</text>
+  <text x="362" y="442" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">200% 100 µs</text>
+  <text x="362" y="472" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">180% 1 ms</text>
+  <text x="362" y="502" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">160% 10 ms</text>
+  <text x="362" y="534" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">120% 100 ms</text>
+
+  <rect x="632" y="342" width="278" height="240" rx="14" fill="#131C21" stroke="#26343C"/>
+  <text x="654" y="380" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#E6EDF1">瞬态（小功率）</text>
+  <text x="654" y="406" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#4FC3D9">≤450 W 或 无该接口</text>
+  <text x="654" y="442" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">150% / 145%</text>
+  <text x="654" y="472" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">135% / 110%</text>
+  <text x="654" y="502" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">时间点同左侧四档</text>
+  <text x="654" y="534" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">老 ATX 2.x 要留更大余量</text>
+</svg>

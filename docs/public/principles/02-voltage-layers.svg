@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="figP02A-title figP02A-desc">
+  <title id="figP02A-title">三层电压：VCCIN、VID 与 Vcore</title>
+  <desc id="figP02A-desc">主板 VRM 产生 VCCIN 送到 CPU，经片内调压或主板直供生成 Vcore 才加在核心上；VID 是 CPU 自己提出的请求值，不是实际电压，也不等于超频频率下的最低可用电压。</desc>
+  <defs>
+    <pattern id="figP02A-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="figP02A-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+    <marker id="figP02A-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#F0A03C"/>
+    </marker>
+    <marker id="figP02A-arrow-cyan" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#4FC3D9"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="560" rx="18" fill="#0E1317"/>
+  <rect width="960" height="560" rx="18" fill="url(#figP02A-grid)"/>
+  <rect width="960" height="560" rx="18" fill="url(#figP02A-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="559" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P02-01</text>
+  <text x="202" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">三层电压：谁送、谁要、谁拿到</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.02</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <!-- 供电链路 -->
+  <rect x="56" y="110" width="160" height="120" rx="14" fill="#131C21" stroke="#26343C"/>
+  <rect x="58" y="130" width="4" height="40" rx="2" fill="#F0A03C"/>
+  <text x="82" y="154" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">主板 VRM</text>
+  <text x="82" y="184" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">产生 VCCIN</text>
+
+  <line x1="216" y1="170" x2="338" y2="170" stroke="#F0A03C" stroke-width="3" marker-end="url(#figP02A-arrow)"/>
+  <text x="277" y="252" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#F0A03C">VCCIN ≈ 1.8 V</text>
+
+  <rect x="346" y="110" width="220" height="120" rx="14" fill="#131C21" stroke="#4FC3D9"/>
+  <rect x="348" y="130" width="4" height="40" rx="2" fill="#4FC3D9"/>
+  <text x="372" y="152" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">调压层</text>
+  <text x="372" y="180" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">FIVR（片内）</text>
+  <text x="372" y="206" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">主板 VRM 直供</text>
+
+  <line x1="566" y1="170" x2="688" y2="170" stroke="#F0A03C" stroke-width="3" marker-end="url(#figP02A-arrow)"/>
+  <text x="627" y="252" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#F0A03C">Vcore</text>
+
+  <rect x="696" y="110" width="170" height="120" rx="14" fill="#131C21" stroke="#26343C"/>
+  <rect x="698" y="130" width="4" height="40" rx="2" fill="#F0A03C"/>
+  <text x="722" y="152" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">CPU 核心</text>
+  <text x="722" y="182" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">拿到 Vcore</text>
+
+  <!-- VID 请求 -->
+  <path d="M781 230V272H456V236" fill="none" stroke="#4FC3D9" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#figP02A-arrow-cyan)"/>
+  <text x="618" y="304" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#4FC3D9">VID：CPU 提出的请求值</text>
+
+  <!-- 两种架构 -->
+  <rect x="48" y="340" width="420" height="130" rx="18" fill="#131C21" stroke="#26343C"/>
+  <text x="76" y="376" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">FIVR（片内调压）</text>
+  <text x="76" y="408" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">主板只提供一路较低的输入电压</text>
+  <text x="76" y="436" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">LLC 作用在 VCCIN 侧，对 Vcore 间接</text>
+
+  <rect x="492" y="340" width="420" height="130" rx="18" fill="#131C21" stroke="#26343C"/>
+  <text x="520" y="376" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">主板 VRM 直供</text>
+  <text x="520" y="408" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">主板 VRM 直接生成 Vcore</text>
+  <text x="520" y="436" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">LLC 对 Vcore 更直接</text>
+
+  <text x="48" y="516" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">读数对不上时，先确认自己在看哪一层。</text>
+</svg>

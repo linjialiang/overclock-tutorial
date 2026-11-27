@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" width="960" height="620" role="img" aria-labelledby="p06b-title p06b-desc">
+  <title id="p06b-title">现代平台档位矩阵</title>
+  <desc id="p06b-desc">Intel 600/700 与 AMD AM5 平台的内存超频与 CPU 超频对照：H610 不支持内存超频，B660/B760 与 H770 支持内存但不支持 CPU 倍频，Z690/Z790 两者都支持；AMD 的 A620 与 B840 只解锁内存，B650 及以上同时解锁 CPU 与内存。</desc>
+  <defs>
+    <pattern id="p06b-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="p06b-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="620" rx="18" fill="#0E1317"/>
+  <rect width="960" height="620" rx="18" fill="url(#p06b-grid)"/>
+  <rect width="960" height="620" rx="18" fill="url(#p06b-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="619" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P06-02</text>
+  <text x="184" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">现代平台档位</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.06</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <text x="912" y="100" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#566B76">以官方芯片组表为准</text>
+
+  <text x="64" y="122" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">平台</text>
+  <text x="440" y="122" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">内存超频</text>
+  <text x="610" y="122" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">CPU 超频</text>
+  <text x="720" y="122" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">备注</text>
+  <path d="M48 136H912" stroke="#2A3A43"/>
+
+  <!-- Intel H610 -->
+  <rect x="48" y="148" width="864" height="42" rx="8" fill="#131C21" stroke="#26343C"/>
+  <rect x="50" y="156" width="3" height="26" rx="1.5" fill="#EF7A6D"/>
+  <text x="64" y="175" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#E6EDF1">Intel H610</text>
+  <text x="440" y="175" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#EF7A6D">否</text>
+  <text x="610" y="175" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#EF7A6D">否</text>
+  <text x="720" y="175" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">入门，不超频</text>
+
+  <!-- Intel B660/B760 -->
+  <rect x="48" y="192" width="864" height="42" rx="8" fill="#131C21" stroke="#26343C"/>
+  <text x="64" y="219" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#E6EDF1">Intel B660 / B760</text>
+  <text x="440" y="219" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#74D68C">是</text>
+  <text x="610" y="219" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#EF7A6D">否</text>
+  <text x="720" y="219" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">主流，可开 XMP</text>
+
+  <!-- Intel H770 -->
+  <rect x="48" y="236" width="864" height="42" rx="8" fill="#131C21" stroke="#26343C"/>
+  <text x="64" y="263" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#E6EDF1">Intel H770</text>
+  <text x="440" y="263" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#74D68C">是</text>
+  <text x="610" y="263" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#EF7A6D">否</text>
+  <text x="720" y="263" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">中高端，接口更全</text>
+
+  <!-- Intel Z690/Z790 -->
+  <rect x="48" y="280" width="864" height="42" rx="8" fill="#16222A" stroke="#F0A03C"/>
+  <text x="64" y="307" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">Intel Z690 / Z790</text>
+  <text x="440" y="307" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#74D68C">是</text>
+  <text x="610" y="307" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#74D68C">是</text>
+  <text x="720" y="307" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">全解锁，适合超频</text>
+
+  <!-- AMD A620 -->
+  <rect x="48" y="334" width="864" height="42" rx="8" fill="#131C21" stroke="#26343C"/>
+  <text x="64" y="361" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#E6EDF1">AMD A620 / A620A</text>
+  <text x="440" y="361" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#74D68C">是</text>
+  <text x="610" y="361" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#EF7A6D">否</text>
+  <text x="720" y="361" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">PRO 600/665 否</text>
+
+  <!-- AMD B840 -->
+  <rect x="48" y="378" width="864" height="42" rx="8" fill="#131C21" stroke="#26343C"/>
+  <rect x="50" y="386" width="3" height="26" rx="1.5" fill="#EF7A6D"/>
+  <text x="64" y="405" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#E6EDF1">AMD B840</text>
+  <text x="440" y="405" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#74D68C">是</text>
+  <text x="610" y="405" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#EF7A6D">否</text>
+  <text x="720" y="405" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">只解锁内存</text>
+
+  <!-- AMD B650/B650E -->
+  <rect x="48" y="422" width="864" height="42" rx="8" fill="#131C21" stroke="#26343C"/>
+  <text x="64" y="449" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#E6EDF1">AMD B650 / B650E</text>
+  <text x="440" y="449" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#74D68C">是</text>
+  <text x="610" y="449" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#74D68C">是</text>
+  <text x="720" y="449" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">主流超频</text>
+
+  <!-- AMD X670/X870 -->
+  <rect x="48" y="466" width="864" height="42" rx="8" fill="#131C21" stroke="#26343C"/>
+  <text x="64" y="493" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#E6EDF1">AMD X670 / X870</text>
+  <text x="440" y="493" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#74D68C">是</text>
+  <text x="610" y="493" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#74D68C">是</text>
+  <text x="720" y="493" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">高端，通道更多</text>
+
+  <text x="48" y="546" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">Intel 600/700 与 AMD AM5 的具体差异，以官方芯片组表为准。</text>
+
+  <text x="48" y="580" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#F0A03C">Intel B 系列可开 XMP；AMD 从 B650 起解锁 CPU，B840/A620 只解锁内存。</text>
+</svg>

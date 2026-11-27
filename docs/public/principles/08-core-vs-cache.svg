@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="fig08c-title fig08c-desc">
+  <title id="fig08c-title">核心不稳还是缓存不稳</title>
+  <desc id="fig08c-desc">按现象分流：满载蓝屏与一跑 FPU 就错更像核心不稳；空闲轻载蓝屏、加载时崩溃更像缓存或 Ring 不稳；WHEA 的 Error Source 也会指向不同单元。隔离手段是内存回默认、Cache 回 Auto 后复现，故障消失说明问题在缓存。</desc>
+  <defs>
+    <pattern id="fig08c-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="fig08c-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+    <marker id="fig08c-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#8FA3AD"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="560" rx="18" fill="#0E1317"/>
+  <rect width="960" height="560" rx="18" fill="url(#fig08c-grid)"/>
+  <rect width="960" height="560" rx="18" fill="url(#fig08c-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="559" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P08-03</text>
+  <text x="152" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">核心不稳，还是缓存不稳</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.08</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <text x="76" y="112" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">现象</text>
+  <text x="420" y="112" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#F0A03C">核心不稳</text>
+  <text x="680" y="112" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#4FC3D9">缓存 / Ring 不稳</text>
+
+  <rect x="48" y="130" width="864" height="58" rx="10" fill="#131C21" stroke="#26343C"/>
+  <text x="76" y="166" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">满载蓝屏 / 重启</text>
+  <text x="420" y="166" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#F0A03C">常见</text>
+  <text x="680" y="166" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#4FC3D9">也可能</text>
+
+  <rect x="48" y="196" width="864" height="58" rx="10" fill="#131C21" stroke="#26343C"/>
+  <text x="76" y="232" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">空闲、轻载蓝屏</text>
+  <text x="420" y="232" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#F0A03C">较少</text>
+  <text x="680" y="232" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#4FC3D9">常见</text>
+
+  <rect x="48" y="262" width="864" height="58" rx="10" fill="#131C21" stroke="#26343C"/>
+  <text x="76" y="298" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">WHEA 来源</text>
+  <text x="420" y="298" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#F0A03C">Processor Core</text>
+  <text x="680" y="298" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#4FC3D9">Cache、互连</text>
+
+  <rect x="48" y="328" width="864" height="58" rx="10" fill="#131C21" stroke="#26343C"/>
+  <text x="76" y="364" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">应用崩溃时机</text>
+  <text x="420" y="364" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#F0A03C">高负载时</text>
+  <text x="680" y="364" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#4FC3D9">轻载、切换、加载</text>
+
+  <path d="M400 130V386" stroke="#26343C"/>
+  <path d="M660 130V386" stroke="#26343C"/>
+
+  <text x="76" y="420" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#4FC3D9">隔离：Cache 回 Auto 是最快的一步 [经验]</text>
+
+  <rect x="48" y="440" width="268" height="58" rx="10" fill="#10181D" stroke="#2A3A43"/>
+  <text x="182" y="476" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#E6EDF1">① 内存回默认、Cache Auto</text>
+  <path d="M316 469H342" stroke="#8FA3AD" stroke-width="2" marker-end="url(#fig08c-arrow)"/>
+
+  <rect x="346" y="440" width="268" height="58" rx="10" fill="#10181D" stroke="#2A3A43"/>
+  <text x="480" y="476" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#E6EDF1">② 复现刚才的故障</text>
+  <path d="M614 469H640" stroke="#8FA3AD" stroke-width="2" marker-end="url(#fig08c-arrow)"/>
+
+  <rect x="644" y="440" width="268" height="58" rx="10" fill="#10181D" stroke="#74D68C" stroke-dasharray="6 5"/>
+  <text x="778" y="476" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#74D68C">③ 消失→缓存，照崩→核心</text>
+
+  <text x="480" y="532" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">核心与缓存是两套倍频/电压；缓存单独验证的完整步骤见 04 章。</text>
+</svg>

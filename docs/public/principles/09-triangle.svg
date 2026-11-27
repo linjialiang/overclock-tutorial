@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="fig09a-title fig09a-desc">
+  <title id="fig09a-title">电压、频率、温度的三角</title>
+  <desc id="fig09a-desc">电压、频率、温度构成三角关系，固定其中两个，第三个就会被约束：固定频率与电压则温度由散热决定，固定频率与温度则电压上限由散热决定，固定电压与温度则频率上限由体质决定。体质决定同频所需电压，不改变耐压上限与该 SKU 的 Tjmax。</desc>
+  <defs>
+    <pattern id="fig09a-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="fig09a-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="560" rx="18" fill="#0E1317"/>
+  <rect width="960" height="560" rx="18" fill="url(#fig09a-grid)"/>
+  <rect width="960" height="560" rx="18" fill="url(#fig09a-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="559" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P09-01</text>
+  <text x="152" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">只能固定两个</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.09</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <path d="M250 158L170 286" stroke="#33454F" stroke-width="3"/>
+  <path d="M310 158L390 286" stroke="#33454F" stroke-width="3"/>
+  <path d="M222 317H338" stroke="#33454F" stroke-width="3"/>
+
+  <rect x="200" y="96" width="160" height="62" rx="12" fill="#131C21" stroke="#F0A03C"/>
+  <text x="280" y="137" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#F0A03C">频率</text>
+
+  <rect x="72" y="286" width="150" height="62" rx="12" fill="#131C21" stroke="#4FC3D9"/>
+  <text x="147" y="327" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#4FC3D9">电压</text>
+
+  <rect x="338" y="286" width="150" height="62" rx="12" fill="#131C21" stroke="#EF7A6D"/>
+  <text x="413" y="327" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#EF7A6D">温度</text>
+
+  <text x="280" y="242" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">固定两个</text>
+  <text x="280" y="268" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">第三个被约束</text>
+
+  <text x="540" y="112" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">固定两个 → 第三个被约束</text>
+
+  <rect x="540" y="132" width="372" height="64" rx="10" fill="#131C21" stroke="#26343C"/>
+  <text x="562" y="172" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">频率 + 电压 → 温度由散热决定</text>
+
+  <rect x="540" y="204" width="372" height="64" rx="10" fill="#131C21" stroke="#26343C"/>
+  <text x="562" y="244" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">频率 + 温度 → 电压上限由散热决定</text>
+
+  <rect x="540" y="276" width="372" height="64" rx="10" fill="#131C21" stroke="#26343C"/>
+  <text x="562" y="316" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">电压 + 温度 → 频率上限由体质决定</text>
+
+  <rect x="48" y="364" width="864" height="140" rx="14" fill="#131C21" stroke="#26343C"/>
+  <text x="70" y="398" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#4FC3D9">体质影响什么</text>
+  <text x="70" y="430" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">好体质 = 同频所需电压更低 → 同频功耗与温度更低</text>
+  <text x="70" y="460" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">不等于耐压更高；Tjmax 是同一 SKU 的固定设计值，不因体质放宽 [Intel]</text>
+  <text x="70" y="490" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#74D68C">判断标准：同频所需电压低 = 好</text>
+</svg>

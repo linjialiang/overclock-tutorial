@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 500" width="960" height="500" role="img" aria-labelledby="p06c-title p06c-desc">
+  <title id="p06c-title">供电怎么判断</title>
+  <desc id="p06c-desc">不看电路图也能判断主板适不适合超频的四个观察点：VRM 散热片是否独立覆盖完整、CPU 供电接口是 8 pin 还是 4 pin、BIOS 是否提供 LLC 与 Offset 与 Profile、内存 QVL 里有没有高频四条。相数不等于能力。</desc>
+  <defs>
+    <pattern id="p06c-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="p06c-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="500" rx="18" fill="#0E1317"/>
+  <rect width="960" height="500" rx="18" fill="url(#p06c-grid)"/>
+  <rect width="960" height="500" rx="18" fill="url(#p06c-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="499" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P06-03</text>
+  <text x="184" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">供电怎么判断</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.06</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <text x="912" y="98" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#566B76">经验判断 · 非硬指标</text>
+
+  <!-- Card 1 -->
+  <rect x="48" y="104" width="420" height="132" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="50" y="118" width="4" height="44" rx="2" fill="#F0A03C"/>
+  <text x="74" y="142" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">VRM 散热片</text>
+  <text x="74" y="182" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#74D68C">好</text>
+  <text x="120" y="182" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">独立散热片、覆盖完整</text>
+  <text x="74" y="214" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#EF7A6D">风险</text>
+  <text x="120" y="214" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">裸奔或散热片很小</text>
+
+  <!-- Card 2 -->
+  <rect x="492" y="104" width="420" height="132" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="494" y="118" width="4" height="44" rx="2" fill="#F0A03C"/>
+  <text x="518" y="142" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">CPU 供电接口</text>
+  <text x="518" y="182" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#74D68C">好</text>
+  <text x="564" y="182" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">8 pin 供电</text>
+  <text x="518" y="214" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#EF7A6D">风险</text>
+  <text x="564" y="214" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">只有 4 pin</text>
+
+  <!-- Card 3 -->
+  <rect x="48" y="250" width="420" height="132" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="50" y="264" width="4" height="44" rx="2" fill="#F0A03C"/>
+  <text x="74" y="288" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">BIOS 选项</text>
+  <text x="74" y="328" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#74D68C">好</text>
+  <text x="120" y="328" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="19" fill="#C9D8DE">LLC / Offset / Profile 齐全</text>
+  <text x="74" y="360" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#EF7A6D">风险</text>
+  <text x="120" y="360" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">选项残缺，缺 Offset</text>
+
+  <!-- Card 4 -->
+  <rect x="492" y="250" width="420" height="132" rx="12" fill="#131C21" stroke="#4FC3D9"/>
+  <rect x="494" y="264" width="4" height="44" rx="2" fill="#4FC3D9"/>
+  <text x="518" y="288" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">内存 QVL</text>
+  <text x="518" y="328" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#74D68C">好</text>
+  <text x="564" y="328" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">高频四条有验证</text>
+  <text x="518" y="360" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#EF7A6D">风险</text>
+  <text x="564" y="360" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">列表很短</text>
+
+  <!-- Callout -->
+  <rect x="48" y="412" width="864" height="44" rx="10" fill="#1A1613" stroke="#F0A03C" stroke-dasharray="7 6"/>
+  <text x="480" y="441" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#F0A03C">相数 ≠ 能力：看每相电流、DrMOS 与 VRM 温度。</text>
+</svg>

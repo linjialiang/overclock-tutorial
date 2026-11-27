@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" width="960" height="620" role="img" aria-labelledby="p04b-title p04b-desc">
+  <title id="p04b-title">核心还是缓存：分流与隔离</title>
+  <desc id="p04b-desc">左半部分区分核心不稳与缓存不稳的症状：核心不稳多在满载暴露，缓存不稳多在空闲、轻载和加载时出现。下半部分是隔离流程：把 Cache 回 Auto、内存回默认档后复现，故障消失就优先怀疑缓存，照样崩就往核心、内存或供电排查。</desc>
+  <defs>
+    <pattern id="p04b-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="p04b-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+    <marker id="p04b-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#566B76"/>
+    </marker>
+    <marker id="p04b-adn-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#74D68C"/>
+    </marker>
+    <marker id="p04b-adn-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#EF7A6D"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="620" rx="18" fill="#0E1317"/>
+  <rect width="960" height="620" rx="18" fill="url(#p04b-grid)"/>
+  <rect width="960" height="620" rx="18" fill="url(#p04b-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="619" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P04-02</text>
+  <text x="184" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">核心还是缓存</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.04</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <!-- Symptom: core -->
+  <rect x="48" y="92" width="420" height="170" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="50" y="106" width="4" height="50" rx="2" fill="#F0A03C"/>
+  <text x="76" y="134" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#E6EDF1">更像核心不稳</text>
+
+  <circle cx="68" cy="165" r="3.5" fill="#F0A03C"/>
+  <text x="84" y="172" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">满载蓝屏 / 重启</text>
+  <circle cx="68" cy="195" r="3.5" fill="#F0A03C"/>
+  <text x="84" y="202" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">一跑 FPU 就出错</text>
+  <circle cx="68" cy="225" r="3.5" fill="#F0A03C"/>
+  <text x="84" y="232" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">高负载应用崩溃</text>
+
+  <!-- Symptom: cache -->
+  <rect x="492" y="92" width="420" height="170" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="494" y="106" width="4" height="50" rx="2" fill="#4FC3D9"/>
+  <text x="520" y="134" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#E6EDF1">更像缓存不稳</text>
+
+  <circle cx="512" cy="165" r="3.5" fill="#4FC3D9"/>
+  <text x="528" y="172" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">空闲、轻载蓝屏</text>
+  <circle cx="512" cy="195" r="3.5" fill="#4FC3D9"/>
+  <text x="528" y="202" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">随机重启</text>
+  <circle cx="512" cy="225" r="3.5" fill="#4FC3D9"/>
+  <text x="528" y="232" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">加载、切换时崩溃</text>
+
+  <text x="48" y="292" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">经验判据，不是官方错误分类；也可能是电压、温度或内存。</text>
+
+  <!-- Flow -->
+  <rect x="48" y="316" width="200" height="72" rx="10" fill="#131C21" stroke="#26343C"/>
+  <text x="148" y="346" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">记录故障现象</text>
+  <text x="148" y="372" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">满载 / 轻载分开记</text>
+
+  <rect x="274" y="316" width="280" height="72" rx="10" fill="#131C21" stroke="#4FC3D9"/>
+  <text x="414" y="346" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#4FC3D9">Cache 回 Auto</text>
+  <text x="414" y="372" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">内存回 JEDEC / 关 XMP</text>
+
+  <rect x="580" y="316" width="332" height="72" rx="10" fill="#131C21" stroke="#26343C"/>
+  <text x="746" y="346" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">复现原来的故障</text>
+  <text x="746" y="372" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">同一个场景、同样时长</text>
+
+  <path d="M250 352H270" stroke="#566B76" stroke-width="2" marker-end="url(#p04b-ar)"/>
+  <path d="M556 352H576" stroke="#566B76" stroke-width="2" marker-end="url(#p04b-ar)"/>
+
+  <!-- Branch -->
+  <path d="M746 388V400H258V426" fill="none" stroke="#74D68C" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#p04b-adn-g)"/>
+  <path d="M746 400V426" fill="none" stroke="#EF7A6D" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#p04b-adn-r)"/>
+
+  <text x="274" y="421" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#74D68C">故障消失</text>
+  <text x="762" y="421" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#EF7A6D">仍复现</text>
+
+  <!-- Outcomes -->
+  <rect x="48" y="432" width="420" height="118" rx="12" fill="#131C21" stroke="#74D68C"/>
+  <rect x="50" y="446" width="4" height="46" rx="2" fill="#74D68C"/>
+  <text x="76" y="472" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#74D68C">故障消失 → 缓存优先</text>
+  <text x="76" y="508" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">逐项加回：先开 XMP，</text>
+  <text x="76" y="538" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">再把 Cache 拉回原倍频</text>
+
+  <rect x="492" y="432" width="420" height="118" rx="12" fill="#131C21" stroke="#EF7A6D"/>
+  <rect x="494" y="446" width="4" height="46" rx="2" fill="#EF7A6D"/>
+  <text x="520" y="472" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#EF7A6D">照样崩 → 查核心、内存、供电</text>
+  <text x="520" y="508" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">先减变量，不要先加电压</text>
+  <text x="520" y="538" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">回到 08 稳定性验证流程</text>
+
+  <text x="480" y="592" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#F0A03C">Cache 回 Auto 后恢复 = 缓存；照样崩 = 核心、内存或供电。</text>
+</svg>

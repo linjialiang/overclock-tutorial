@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" width="960" height="620" role="img" aria-labelledby="figP02B-title figP02B-desc">
+  <title id="figP02B-title">四种核心电压模式的空载与满载行为</title>
+  <desc id="figP02B-desc">Auto 全程跟随 VID；Manual 用固定值覆盖 VID；Offset 让 VID 曲线整体平移；Adaptive 只在 Turbo 区间抬高到目标值。虚线为 VID 参考曲线，模式数量与对象随主板和 BIOS 变化。</desc>
+  <defs>
+    <pattern id="figP02B-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="figP02B-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="620" rx="18" fill="#0E1317"/>
+  <rect width="960" height="620" rx="18" fill="url(#figP02B-grid)"/>
+  <rect width="960" height="620" rx="18" fill="url(#figP02B-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="619" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P02-02</text>
+  <text x="202" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">四种核心电压模式</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.02</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <!-- Auto -->
+  <rect x="48" y="76" width="420" height="248" rx="18" fill="#131C21" stroke="#26343C"/>
+  <rect x="50" y="94" width="4" height="40" rx="2" fill="#4FC3D9"/>
+  <text x="76" y="116" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#E6EDF1">Auto</text>
+  <rect x="316" y="94" width="124" height="28" rx="14" fill="#10181D" stroke="#2A3A43"/>
+  <text x="378" y="114" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">适合不折腾</text>
+
+  <line x1="88" y1="222" x2="428" y2="222" stroke="#223038" stroke-width="2"/>
+  <path d="M88 200C200 196 300 184 428 176" fill="none" stroke="#4FC3D9" stroke-width="3"/>
+  <text x="80" y="252" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">空载</text>
+  <text x="428" y="252" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">满载</text>
+
+  <text x="76" y="280" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">空载 / 满载</text>
+  <text x="440" y="280" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">跟随 VID → 跟随 VID</text>
+  <text x="76" y="306" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">能否低于 VID</text>
+  <text x="440" y="306" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">—</text>
+
+  <!-- Manual -->
+  <rect x="492" y="76" width="420" height="248" rx="18" fill="#131C21" stroke="#26343C"/>
+  <rect x="494" y="94" width="4" height="40" rx="2" fill="#F0A03C"/>
+  <text x="520" y="116" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#E6EDF1">Manual</text>
+  <rect x="760" y="94" width="124" height="28" rx="14" fill="#10181D" stroke="#2A3A43"/>
+  <text x="822" y="114" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">适合验证体质</text>
+
+  <line x1="532" y1="222" x2="872" y2="222" stroke="#223038" stroke-width="2"/>
+  <path d="M532 200C644 196 744 184 872 176" fill="none" stroke="#566B76" stroke-width="2" stroke-dasharray="6 6"/>
+  <path d="M532 190H872" fill="none" stroke="#F0A03C" stroke-width="3"/>
+  <text x="524" y="252" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">空载</text>
+  <text x="872" y="252" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">满载</text>
+
+  <text x="520" y="280" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">空载 / 满载</text>
+  <text x="884" y="280" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">固定值 → 固定值</text>
+  <text x="520" y="306" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">能否低于 VID</text>
+  <text x="884" y="306" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#74D68C">可以</text>
+
+  <!-- Offset -->
+  <rect x="48" y="334" width="420" height="248" rx="18" fill="#131C21" stroke="#26343C"/>
+  <rect x="50" y="352" width="4" height="40" rx="2" fill="#F0A03C"/>
+  <text x="76" y="374" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#E6EDF1">Offset</text>
+  <rect x="316" y="352" width="124" height="28" rx="14" fill="#10181D" stroke="#2A3A43"/>
+  <text x="378" y="372" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">适合日常降压</text>
+
+  <line x1="88" y1="480" x2="428" y2="480" stroke="#223038" stroke-width="2"/>
+  <path d="M88 452C200 448 300 436 428 428" fill="none" stroke="#566B76" stroke-width="2" stroke-dasharray="6 6"/>
+  <path d="M88 466C200 462 300 450 428 442" fill="none" stroke="#F0A03C" stroke-width="3"/>
+  <text x="80" y="510" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">空载</text>
+  <text x="428" y="510" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">满载</text>
+
+  <text x="76" y="538" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">空载 / 满载</text>
+  <text x="440" y="538" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">跟随 VID ± 偏移</text>
+  <text x="76" y="564" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">能否低于 VID</text>
+  <text x="440" y="564" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#74D68C">可以（负号）</text>
+
+  <!-- Adaptive -->
+  <rect x="492" y="334" width="420" height="248" rx="18" fill="#131C21" stroke="#26343C"/>
+  <rect x="494" y="352" width="4" height="40" rx="2" fill="#4FC3D9"/>
+  <text x="520" y="374" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#E6EDF1">Adaptive</text>
+  <rect x="736" y="352" width="148" height="28" rx="14" fill="#10181D" stroke="#2A3A43"/>
+  <text x="810" y="372" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">适合兼顾两段</text>
+
+  <line x1="532" y1="480" x2="872" y2="480" stroke="#223038" stroke-width="2"/>
+  <path d="M532 452C644 448 744 436 872 428" fill="none" stroke="#566B76" stroke-width="2" stroke-dasharray="6 6"/>
+  <path d="M532 452L700 448L712 410L872 410" fill="none" stroke="#F0A03C" stroke-width="3" stroke-linejoin="round"/>
+  <text x="524" y="510" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">空载</text>
+  <text x="872" y="510" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">满载</text>
+
+  <text x="520" y="538" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">空载 / 满载</text>
+  <text x="884" y="538" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">跟随 VID → Turbo 目标</text>
+  <text x="520" y="564" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">能否低于 VID</text>
+  <text x="884" y="564" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">取决于实现</text>
+
+  <text x="48" y="610" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">模式数量与对象随主板 / BIOS 变化：部分主板的核心只有前三种。</text>
+</svg>

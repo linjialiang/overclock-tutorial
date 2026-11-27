@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" role="img" aria-labelledby="figP03B-title figP03B-desc">
+  <title id="figP03B-title">时序参数与 Command Rate</title>
+  <desc id="figP03B-desc">一次读取依次经过 tRCD、CL 到数据输出，tRAS 覆盖 ACT 到预充电的最小间隔，tRP 是预充电时间；CL-tRCD-tRP-tRAS 就是 11-13-13-30 这种写法的顺序。Command Rate 1T 命令更密，2T 间隔更长。</desc>
+  <defs>
+    <pattern id="figP03B-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="figP03B-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="540" rx="18" fill="#0E1317"/>
+  <rect width="960" height="540" rx="18" fill="url(#figP03B-grid)"/>
+  <rect width="960" height="540" rx="18" fill="url(#figP03B-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="539" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P03-02</text>
+  <text x="202" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">时序参数与 Command Rate</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.03</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <text x="96" y="124" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">ACT 行激活</text>
+  <text x="700" y="124" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">PRE 预充电</text>
+
+  <path d="M96 152H700M96 144V160M700 144V160" stroke="#4FC3D9" stroke-width="2"/>
+  <text x="398" y="140" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#4FC3D9">tRAS：ACT 到预充电的最小间隔</text>
+
+  <path d="M96 168V252M276 168V252M466 168V252M700 168V252" stroke="#2C3B44" stroke-width="2" stroke-dasharray="5 5"/>
+
+  <rect x="96" y="176" width="180" height="68" fill="#0F2A31" stroke="#4FC3D9" stroke-width="1.5"/>
+  <text x="186" y="206" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#4FC3D9">tRCD</text>
+  <text x="186" y="230" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">行→列延迟</text>
+
+  <rect x="276" y="176" width="190" height="68" fill="#2A1D0F" stroke="#F0A03C" stroke-width="1.5"/>
+  <text x="371" y="206" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">CL</text>
+  <text x="371" y="230" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">CAS 延迟</text>
+
+  <rect x="466" y="176" width="234" height="68" fill="#0F2A31" stroke="#4FC3D9" stroke-width="1.5"/>
+  <text x="583" y="206" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#4FC3D9">tRP</text>
+  <text x="583" y="230" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">预充电时间</text>
+
+  <text x="276" y="268" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">CAS 命令</text>
+  <text x="466" y="268" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#74D68C">数据输出</text>
+
+  <text x="76" y="300" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">11-13-13-30 = CL - tRCD - tRP - tRAS</text>
+
+  <rect x="48" y="326" width="864" height="150" rx="18" fill="#131C21" stroke="#26343C"/>
+  <text x="76" y="362" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">Command Rate：1T 与 2T</text>
+
+  <text x="76" y="420" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#E6EDF1">1T</text>
+  <rect x="150" y="398" width="42" height="26" rx="4" fill="#0F2A31" stroke="#4FC3D9"/>
+  <rect x="198" y="398" width="42" height="26" rx="4" fill="#0F2A31" stroke="#4FC3D9"/>
+  <rect x="246" y="398" width="42" height="26" rx="4" fill="#0F2A31" stroke="#4FC3D9"/>
+  <rect x="294" y="398" width="42" height="26" rx="4" fill="#0F2A31" stroke="#4FC3D9"/>
+  <text x="392" y="417" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">命令更密 → 更快，但更难稳</text>
+
+  <text x="76" y="464" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#E6EDF1">2T</text>
+  <rect x="150" y="442" width="42" height="26" rx="4" fill="#2A1D0F" stroke="#F0A03C"/>
+  <rect x="208" y="442" width="42" height="26" rx="4" fill="#2A1D0F" stroke="#F0A03C"/>
+  <rect x="266" y="442" width="42" height="26" rx="4" fill="#2A1D0F" stroke="#F0A03C"/>
+  <rect x="324" y="442" width="42" height="26" rx="4" fill="#2A1D0F" stroke="#F0A03C"/>
+  <text x="412" y="461" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">间隔拉长 → 四条常用它排错 [经验]</text>
+
+  <text x="48" y="510" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">同频下 CL 越小越快；2T 是排错手段，不是硬规定。</text>
+</svg>

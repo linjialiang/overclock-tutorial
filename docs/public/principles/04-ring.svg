@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 500" width="960" height="500" role="img" aria-labelledby="p04a-title p04a-desc">
+  <title id="p04a-title">Ring 连接什么</title>
+  <desc id="p04a-desc">环形总线把 CPU 核心、L3 缓存、内存控制器和核显串在一起；Ring 频率就是 Cache Ratio，等于 BCLK 乘倍频；核心倍频与缓存倍频是两套独立设置，但两者共享同一套散热。</desc>
+  <defs>
+    <pattern id="p04a-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="p04a-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="500" rx="18" fill="#0E1317"/>
+  <rect width="960" height="500" rx="18" fill="url(#p04a-grid)"/>
+  <rect width="960" height="500" rx="18" fill="url(#p04a-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="499" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P04-01</text>
+  <text x="184" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">Ring 连接什么</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.04</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <!-- Ring core -->
+  <ellipse cx="268" cy="250" rx="142" ry="80" fill="#101A1F" stroke="#F0A03C" stroke-width="7"/>
+  <ellipse cx="268" cy="250" rx="122" ry="62" fill="none" stroke="#2A3A43" stroke-width="1.5" stroke-dasharray="5 7"/>
+  <text x="268" y="240" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#F0A03C">Ring 环形总线</text>
+  <text x="268" y="272" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="19" fill="#4FC3D9">= Cache Ratio</text>
+
+  <!-- Connectors -->
+  <path d="M155 154V200M385 154V201M155 346V301M385 346V300" stroke="#33454F" stroke-width="2"/>
+
+  <!-- Node cards -->
+  <rect x="70" y="98" width="170" height="56" rx="10" fill="#131C21" stroke="#26343C"/>
+  <text x="155" y="124" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#E6EDF1">CPU Core</text>
+  <text x="155" y="145" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">核心</text>
+
+  <rect x="300" y="98" width="170" height="56" rx="10" fill="#131C21" stroke="#26343C"/>
+  <text x="385" y="124" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#E6EDF1">L3 Cache</text>
+  <text x="385" y="145" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">三级缓存</text>
+
+  <rect x="70" y="346" width="170" height="56" rx="10" fill="#131C21" stroke="#26343C"/>
+  <text x="155" y="372" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#E6EDF1">iGPU</text>
+  <text x="155" y="393" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">核显</text>
+
+  <rect x="300" y="346" width="170" height="56" rx="10" fill="#131C21" stroke="#26343C"/>
+  <text x="385" y="372" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#E6EDF1">IMC</text>
+  <text x="385" y="393" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">内存控制器</text>
+
+  <!-- Formula -->
+  <text x="48" y="436" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">Cache Ratio = BCLK × 倍频</text>
+  <text x="48" y="464" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#E6EDF1">100 MHz × 40 = 4000 MHz</text>
+
+  <!-- Right panel A -->
+  <rect x="500" y="96" width="412" height="176" rx="12" fill="#131C21" stroke="#26343C"/>
+  <text x="524" y="130" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#E6EDF1">两套独立倍频</text>
+
+  <text x="524" y="168" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">核心倍频</text>
+  <text x="524" y="192" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CPU Core Ratio</text>
+  <text x="888" y="168" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#F0A03C">核心频率</text>
+  <text x="888" y="192" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#F0A03C">47x → 4700 MHz</text>
+
+  <path d="M524 206H888" stroke="#26343C"/>
+
+  <text x="524" y="232" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">缓存倍频</text>
+  <text x="524" y="256" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CPU Cache Ratio</text>
+  <text x="888" y="232" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#4FC3D9">Ring 频率</text>
+  <text x="888" y="256" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#4FC3D9">40x → 4000 MHz</text>
+
+  <!-- Right panel B -->
+  <rect x="500" y="290" width="412" height="130" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="502" y="304" width="4" height="44" rx="2" fill="#EF7A6D"/>
+  <text x="524" y="324" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">共享同一套散热</text>
+  <text x="524" y="358" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">Ring 越高，功耗与温度一起升</text>
+  <text x="524" y="390" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">核心可用的温度余量变少</text>
+
+  <text x="500" y="456" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">Cache 不决定算力，只决定访问延迟。</text>
+</svg>

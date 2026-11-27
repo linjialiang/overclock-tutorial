@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 490" width="960" height="490" role="img" aria-labelledby="fig07c-title fig07c-desc">
+  <title id="fig07c-title">电源与散热够不够的四条判断</title>
+  <desc id="fig07c-desc">四条判据：烤机 20 到 30 分钟频率不下降；核心温度离自设停止线还有 10 °C 以上余量；电源不重启、不触发保护且 12V 实测稳定；机箱进出风温差明显。四条全过才算够用。</desc>
+  <defs>
+    <pattern id="fig07c-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="fig07c-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="490" rx="18" fill="#0E1317"/>
+  <rect width="960" height="490" rx="18" fill="url(#fig07c-grid)"/>
+  <rect width="960" height="490" rx="18" fill="url(#fig07c-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="489" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P07-03</text>
+  <text x="152" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">够不够：四条判断</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.07</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <rect x="48" y="104" width="200" height="208" rx="14" fill="#131C21" stroke="#26343C"/>
+  <text x="70" y="144" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="24" fill="#F0A03C">01</text>
+  <text x="70" y="180" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">频率不掉</text>
+  <text x="70" y="216" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">烤机 20~30 min</text>
+  <text x="70" y="244" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">有效频率不下降</text>
+  <text x="70" y="272" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">没有功耗/温度墙</text>
+
+  <rect x="268" y="104" width="200" height="208" rx="14" fill="#131C21" stroke="#26343C"/>
+  <text x="290" y="144" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="24" fill="#F0A03C">02</text>
+  <text x="290" y="180" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">温度留余量</text>
+  <text x="290" y="216" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">离停止线 ≥10 °C</text>
+  <text x="290" y="244" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">停止线自己设</text>
+  <text x="290" y="272" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">不要贴线运行</text>
+
+  <rect x="488" y="104" width="200" height="208" rx="14" fill="#131C21" stroke="#26343C"/>
+  <text x="510" y="144" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="24" fill="#F0A03C">03</text>
+  <text x="510" y="180" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">电源不重启</text>
+  <text x="510" y="216" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">不触发保护</text>
+  <text x="510" y="244" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">12V 实测稳定</text>
+  <text x="510" y="272" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">啸叫单独记录</text>
+
+  <rect x="708" y="104" width="204" height="208" rx="14" fill="#131C21" stroke="#26343C"/>
+  <text x="730" y="144" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="24" fill="#F0A03C">04</text>
+  <text x="730" y="180" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">风道在工作</text>
+  <text x="730" y="216" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">进出风温差明显</text>
+  <text x="730" y="244" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">热风接得住后出</text>
+  <text x="730" y="272" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">VRM 吃到冷风</text>
+
+  <rect x="48" y="340" width="864" height="56" rx="12" fill="#101C18" stroke="#74D68C" stroke-dasharray="7 6"/>
+  <text x="480" y="376" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#74D68C">四条全过 = 电源与散热够用</text>
+
+  <text x="480" y="432" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#EF7A6D">任一条不满足 → 补散热或换电源；加电压换不来散热能力</text>
+  <text x="480" y="462" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">[经验] 为社区判断值；不掉频只说明没节流，算得对不对看稳定性验证。</text>
+</svg>

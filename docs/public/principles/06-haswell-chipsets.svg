@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 580" width="960" height="580" role="img" aria-labelledby="p06a-title p06a-desc">
+  <title id="p06a-title">Haswell 四款芯片组能力矩阵</title>
+  <desc id="p06a-desc">H81、B85、H97、Z97 的能力对比：H81 与 B85 在芯片组层面不支持内存超频、也不支持 CPU 与核显倍频，每通道分别为 1 条与 2 条 DIMM；H97 支持内存超频但不支持 CPU 与核显倍频；只有 Z97 三项全解锁。CPU 与核显倍频列还取决于具体 BIOS，个别 H81/B85 主板可开 XMP 但会被限速。</desc>
+  <defs>
+    <pattern id="p06a-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="p06a-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="580" rx="18" fill="#0E1317"/>
+  <rect width="960" height="580" rx="18" fill="url(#p06a-grid)"/>
+  <rect width="960" height="580" rx="18" fill="url(#p06a-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="579" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P06-01</text>
+  <text x="184" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">Haswell 四款芯片组</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.06</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <text x="912" y="100" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#566B76">来源 · Intel ARK</text>
+
+  <!-- Header row -->
+  <text x="64" y="126" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">芯片组</text>
+  <text x="300" y="126" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">内存 XMP</text>
+  <text x="470" y="126" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">CPU 倍频</text>
+  <text x="640" y="126" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">核显倍频</text>
+  <text x="810" y="126" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">每通道 DIMM</text>
+  <path d="M48 140H912" stroke="#2A3A43"/>
+
+  <!-- H81 -->
+  <rect x="48" y="148" width="864" height="66" rx="10" fill="#131C21" stroke="#26343C"/>
+  <text x="64" y="190" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#E6EDF1">H81</text>
+  <text x="300" y="190" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#EF7A6D">否</text>
+  <text x="470" y="190" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#EF7A6D">否</text>
+  <text x="640" y="190" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#EF7A6D">否</text>
+  <text x="810" y="190" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#8FA3AD">1</text>
+
+  <!-- B85 -->
+  <rect x="48" y="222" width="864" height="66" rx="10" fill="#131C21" stroke="#26343C"/>
+  <text x="64" y="264" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#E6EDF1">B85</text>
+  <text x="300" y="264" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#EF7A6D">否</text>
+  <text x="470" y="264" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#EF7A6D">否</text>
+  <text x="640" y="264" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#EF7A6D">否</text>
+  <text x="810" y="264" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#8FA3AD">2</text>
+
+  <!-- H97 -->
+  <rect x="48" y="296" width="864" height="66" rx="10" fill="#131C21" stroke="#26343C"/>
+  <text x="64" y="338" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#E6EDF1">H97</text>
+  <text x="300" y="338" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#74D68C">是</text>
+  <text x="470" y="338" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#EF7A6D">否</text>
+  <text x="640" y="338" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#EF7A6D">否</text>
+  <text x="810" y="338" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#8FA3AD">2</text>
+
+  <!-- Z97 -->
+  <rect x="48" y="370" width="864" height="66" rx="10" fill="#16222A" stroke="#F0A03C"/>
+  <text x="64" y="412" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#F0A03C">Z97</text>
+  <text x="300" y="412" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#74D68C">是</text>
+  <text x="470" y="412" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#74D68C">是</text>
+  <text x="640" y="412" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#74D68C">是</text>
+  <text x="810" y="412" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="22" fill="#8FA3AD">2</text>
+
+  <text x="48" y="470" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">CPU / 核显倍频列取决于具体 BIOS 是否提供选项。</text>
+  <text x="48" y="498" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">个别 H81 / B85 主板可开 XMP，但会被限速在 DDR3-1600。</text>
+
+  <text x="48" y="544" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#F0A03C">要 CPU 倍频 → 只能 Z97；只需 XMP → H97；H81/B85 芯片组不支持内存超频。</text>
+</svg>

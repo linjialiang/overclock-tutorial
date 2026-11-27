@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" width="960" height="620" role="img" aria-labelledby="fig09b-title fig09b-desc">
+  <title id="fig09b-title">收敛流程：从中间值到自己的值</title>
+  <desc id="fig09b-desc">六步收敛：从市面常见中间值起步，短时筛查稳定后继续，每次降 0.01 V 复测，出现报错或掉频即为边界，回加 0.01 到 0.02 V 留余量，换散热或室温或 BIOS 后重新验证。右侧对比手动与 Tuner，下方列出 Intel 与 AMD 的调参入口。</desc>
+  <defs>
+    <pattern id="fig09b-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="fig09b-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="620" rx="18" fill="#0E1317"/>
+  <rect width="960" height="620" rx="18" fill="url(#fig09b-grid)"/>
+  <rect width="960" height="620" rx="18" fill="url(#fig09b-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="619" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P09-02</text>
+  <text x="152" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">收敛到自己的值</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.09</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <text x="48" y="112" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">收敛流程</text>
+
+  <path d="M64 132V406" stroke="#26343C" stroke-width="2"/>
+
+  <circle cx="64" cy="139" r="13" fill="#131C21" stroke="#F0A03C" stroke-width="2"/>
+  <text x="64" y="145" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#F0A03C">1</text>
+  <text x="92" y="146" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">从市面常见中间值起步</text>
+
+  <circle cx="64" cy="191" r="13" fill="#131C21" stroke="#F0A03C" stroke-width="2"/>
+  <text x="64" y="197" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#F0A03C">2</text>
+  <text x="92" y="198" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">短时筛查，稳定才继续</text>
+
+  <circle cx="64" cy="243" r="13" fill="#131C21" stroke="#F0A03C" stroke-width="2"/>
+  <text x="64" y="249" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#F0A03C">3</text>
+  <text x="92" y="250" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">每次降 0.01 V 后复测</text>
+
+  <circle cx="64" cy="295" r="13" fill="#131C21" stroke="#EF7A6D" stroke-width="2"/>
+  <text x="64" y="301" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#EF7A6D">4</text>
+  <text x="92" y="302" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">报错或掉频 = 边界</text>
+
+  <circle cx="64" cy="347" r="13" fill="#131C21" stroke="#74D68C" stroke-width="2"/>
+  <text x="64" y="353" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#74D68C">5</text>
+  <text x="92" y="354" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">回加 0.01~0.02 V 留余量</text>
+
+  <circle cx="64" cy="399" r="13" fill="#131C21" stroke="#4FC3D9" stroke-width="2"/>
+  <text x="64" y="405" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#4FC3D9">6</text>
+  <text x="92" y="406" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">换散热/室温/BIOS 后复验</text>
+
+  <text x="92" y="448" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">步长与回加都是经验值 [经验]</text>
+
+  <rect x="490" y="110" width="422" height="320" rx="14" fill="#131C21" stroke="#26343C"/>
+  <text x="512" y="148" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">手动，还是跟随 Tuner？</text>
+  <text x="512" y="188" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#F0A03C">手动</text>
+  <text x="532" y="216" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">电压、缓存都可控</text>
+  <text x="532" y="242" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">适合降压、要可复现</text>
+  <path d="M512 262H890" stroke="#26343C"/>
+  <text x="512" y="294" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#4FC3D9">Tuner</text>
+  <text x="532" y="322" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">按主板保守规则给值</text>
+  <text x="532" y="348" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">不会识别你这颗的体质 [经验]</text>
+  <text x="532" y="374" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">可能改动内存参数 / BCLK</text>
+  <text x="532" y="400" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">定位是先跑起来，不是日常</text>
+
+  <rect x="48" y="482" width="278" height="76" rx="12" fill="#131C21" stroke="#26343C"/>
+  <text x="187" y="512" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">Intel 传统桌面</text>
+  <text x="187" y="540" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">Core Ratio / Cache Ratio</text>
+
+  <rect x="340" y="482" width="278" height="76" rx="12" fill="#131C21" stroke="#26343C"/>
+  <text x="479" y="512" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">Intel 12 代及以后</text>
+  <text x="479" y="540" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">P-core / E-core 分频</text>
+
+  <rect x="632" y="482" width="278" height="76" rx="12" fill="#10181D" stroke="#4FC3D9" stroke-dasharray="7 6"/>
+  <text x="771" y="512" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">AMD Ryzen</text>
+  <text x="771" y="540" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#7C929C">PBO · Curve Optimizer</text>
+
+  <text x="480" y="588" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">PBO / Curve Optimizer 支持型号有限，以主板与 CPU 说明为准 [官方页]</text>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 580" width="960" height="580" role="img" aria-labelledby="fig08b-title fig08b-desc">
+  <title id="fig08b-title">WHEA：先看严重度与来源</title>
+  <desc id="fig08b-desc">WHEA 记录分 Corrected 已纠正与 Uncorrected 不可纠正两级；事件查看器里 WHEA-Logger 的 Event ID 18 通常是致命硬件错误，17 与 47 常见为已纠正或警告；Error Source 标出 Processor、Memory、PCIe 来源；有内核转储时可用 WinDbg 的 !whea 与 !errrec 查看记录。</desc>
+  <defs>
+    <pattern id="fig08b-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="fig08b-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+    <marker id="fig08b-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#4FC3D9"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="580" rx="18" fill="#0E1317"/>
+  <rect width="960" height="580" rx="18" fill="url(#fig08b-grid)"/>
+  <rect width="960" height="580" rx="18" fill="url(#fig08b-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="579" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P08-02</text>
+  <text x="152" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">WHEA：先看严重度与来源</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.08</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <text x="48" y="110" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#F0A03C">01</text>
+  <text x="78" y="110" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">严重度</text>
+  <text x="490" y="110" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#F0A03C">02</text>
+  <text x="520" y="110" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">事件查看器 WHEA-Logger</text>
+
+  <rect x="48" y="126" width="422" height="86" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="50" y="142" width="4" height="54" rx="2" fill="#74D68C"/>
+  <text x="70" y="160" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#74D68C">Corrected（已纠正）</text>
+  <text x="70" y="192" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">硬件或固件已修正，非致命</text>
+
+  <rect x="48" y="224" width="422" height="86" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="50" y="240" width="4" height="54" rx="2" fill="#EF7A6D"/>
+  <text x="70" y="258" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#EF7A6D">Uncorrected（不可纠正）</text>
+  <text x="70" y="290" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">系统无法修正，通常会蓝屏或重启</text>
+
+  <rect x="490" y="126" width="422" height="64" rx="12" fill="#131C21" stroke="#26343C"/>
+  <text x="512" y="166" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="21" fill="#F0A03C">Event ID 18</text>
+  <text x="700" y="166" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#EF7A6D">致命硬件错误</text>
+
+  <rect x="490" y="202" width="422" height="64" rx="12" fill="#131C21" stroke="#26343C"/>
+  <text x="512" y="242" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#4FC3D9">Event ID 17 · 47</text>
+  <text x="730" y="242" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#E6EDF1">常见为已纠正/警告</text>
+
+  <text x="490" y="290" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">需按错误记录与是否复现判断</text>
+  <text x="490" y="316" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">有一条记录 ≠ 超频失败 [官方页]</text>
+
+  <text x="48" y="352" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#F0A03C">03</text>
+  <text x="78" y="352" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">Error Source：先按来源隔离</text>
+
+  <rect x="48" y="368" width="170" height="60" rx="10" fill="#131C21" stroke="#4FC3D9"/>
+  <text x="133" y="406" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="21" fill="#4FC3D9">Processor</text>
+  <rect x="240" y="368" width="170" height="60" rx="10" fill="#131C21" stroke="#4FC3D9"/>
+  <text x="325" y="406" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="21" fill="#4FC3D9">Memory</text>
+  <rect x="432" y="368" width="170" height="60" rx="10" fill="#131C21" stroke="#4FC3D9"/>
+  <text x="517" y="406" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="21" fill="#4FC3D9">PCIe</text>
+
+  <text x="616" y="392" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#E6EDF1">内存回默认、Cache 回 Auto</text>
+  <text x="616" y="418" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#EF7A6D">再逐项加回，别急着加电压</text>
+
+  <rect x="48" y="444" width="864" height="112" rx="12" fill="#131C21" stroke="#26343C"/>
+  <text x="70" y="476" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#4FC3D9">04 WinDbg：能生成内核转储时再看</text>
+  <text x="70" y="512" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="21" fill="#F0A03C">!whea</text>
+  <text x="152" y="512" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">顶层 WHEA 信息</text>
+  <text x="70" y="542" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="21" fill="#F0A03C">!errrec &lt;地址&gt;</text>
+  <text x="240" y="542" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">单条 error record 的内容</text>
+  <text x="620" y="476" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">普通排查：事件查看器</text>
+  <text x="620" y="504" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">来源 / 严重度 / 是否复现</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="p05b-title p05b-desc">
+  <title id="p05b-title">核显的瓶颈在内存带宽</title>
+  <desc id="p05b-desc">相对带宽示意：单通道约为双通道的一半，双通道是底线；双通道平台插两条还是四条 DIMM 通道数都不变，四条只带来小幅 rank 交错收益并加大内存控制器压力。给核显超频之前，先开 XMP 提内存频率比拉核显倍频更划算。</desc>
+  <defs>
+    <pattern id="p05b-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="p05b-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="520" rx="18" fill="#0E1317"/>
+  <rect width="960" height="520" rx="18" fill="url(#p05b-grid)"/>
+  <rect width="960" height="520" rx="18" fill="url(#p05b-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="519" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P05-02</text>
+  <text x="184" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">瓶颈在内存带宽</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.05</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <!-- Chart -->
+  <text x="56" y="116" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">相对内存带宽</text>
+  <path d="M64 400H460" stroke="#3A4E58" stroke-width="2"/>
+
+  <text x="170" y="266" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#EF7A6D">≈ 50%</text>
+  <rect x="118" y="278" width="104" height="122" rx="6" fill="#EF7A6D" opacity="0.85"/>
+
+  <text x="334" y="148" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">100%</text>
+  <rect x="282" y="160" width="104" height="240" rx="6" fill="#F0A03C"/>
+
+  <text x="170" y="432" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">单通道</text>
+  <text x="334" y="432" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">双通道</text>
+  <text x="386" y="432" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">← 底线</text>
+
+  <!-- Card 1 -->
+  <rect x="500" y="92" width="412" height="160" rx="12" fill="#131C21" stroke="#26343C"/>
+  <text x="524" y="128" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">四条 DIMM ≠ 四通道</text>
+  <text x="524" y="166" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">2 条 / 4 条：通道数不变</text>
+  <text x="524" y="196" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">四条只多 rank 交错，小幅收益</text>
+  <text x="524" y="226" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#EF7A6D">代价：IMC 压力更大</text>
+
+  <!-- Card 2 -->
+  <rect x="500" y="270" width="412" height="140" rx="12" fill="#131C21" stroke="#4FC3D9"/>
+  <rect x="502" y="284" width="4" height="46" rx="2" fill="#4FC3D9"/>
+  <text x="524" y="306" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#4FC3D9">先开 XMP 更划算</text>
+  <text x="524" y="344" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">内存频率 ↑ → 核显带宽 ↑</text>
+  <text x="524" y="376" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">拉核显倍频的收益有限</text>
+
+  <text x="480" y="490" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#F0A03C">双通道是底线；四条不增加通道，XMP 优先于核显倍频。</text>
+</svg>

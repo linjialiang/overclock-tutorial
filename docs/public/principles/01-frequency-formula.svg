@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600" role="img" aria-labelledby="figP01A-title figP01A-desc">
+  <title id="figP01A-title">频率的构成与官方三档</title>
+  <desc id="figP01A-desc">频率等于 BCLK 乘以倍频，BCLK 100 MHz 配 47x 就是 4700 MHz；基础频率、最大睿频、全核睿频是官方三档，用户设定的全核同频一旦超过最大睿频档就已经是超频。</desc>
+  <defs>
+    <pattern id="figP01A-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="figP01A-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="600" rx="18" fill="#0E1317"/>
+  <rect width="960" height="600" rx="18" fill="url(#figP01A-grid)"/>
+  <rect width="960" height="600" rx="18" fill="url(#figP01A-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="599" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P01-01</text>
+  <text x="202" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">频率的构成与官方三档</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.01</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <!-- 公式 -->
+  <rect x="48" y="96" width="864" height="140" rx="18" fill="#131C21" stroke="#26343C"/>
+  <rect x="60" y="118" width="4" height="44" rx="2" fill="#F0A03C"/>
+
+  <rect x="76" y="124" width="190" height="68" rx="12" fill="#10181D" stroke="#2A3A43"/>
+  <text x="96" y="150" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">BCLK</text>
+  <text x="96" y="182" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="24" fill="#4FC3D9">100 MHz</text>
+
+  <text x="296" y="176" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="28" fill="#F0A03C">×</text>
+
+  <rect x="326" y="124" width="190" height="68" rx="12" fill="#10181D" stroke="#2A3A43"/>
+  <text x="346" y="150" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">倍频</text>
+  <text x="346" y="182" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="24" fill="#E6EDF1">47x</text>
+
+  <text x="546" y="176" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="28" fill="#F0A03C">=</text>
+
+  <rect x="576" y="124" width="306" height="68" rx="12" fill="#10181D" stroke="#2A3A43"/>
+  <text x="596" y="150" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">核心频率</text>
+  <text x="596" y="184" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="26" fill="#F0A03C">4700 MHz</text>
+
+  <text x="76" y="222" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">绝大多数平台 BCLK = 100 MHz，所以 47x 就是 4700 MHz。</text>
+
+  <!-- 档位刻度 -->
+  <text x="48" y="272" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">官方三档 vs 用户设定</text>
+  <text x="687" y="276" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#F0A03C">官方 Turbo 4.40</text>
+  <path d="M687 284V544" stroke="#F0A03C" stroke-width="2" stroke-dasharray="7 6"/>
+
+  <!-- 行 1 基础频率 -->
+  <rect x="48" y="288" width="864" height="58" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="50" y="301" width="4" height="32" rx="2" fill="#4FC3D9"/>
+  <text x="78" y="325" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">基础频率</text>
+  <text x="300" y="325" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#4FC3D9">4.00 GHz</text>
+  <line x1="470" y1="317" x2="860" y2="317" stroke="#223038" stroke-width="6" stroke-linecap="round"/>
+  <rect x="470" y="311" width="43" height="12" rx="6" fill="#4FC3D9"/>
+
+  <!-- 行 2 最大睿频 -->
+  <rect x="48" y="354" width="864" height="58" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="50" y="367" width="4" height="32" rx="2" fill="#F0A03C"/>
+  <text x="78" y="391" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">最大睿频（少核）</text>
+  <text x="300" y="391" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">4.40 GHz</text>
+  <line x1="470" y1="383" x2="860" y2="383" stroke="#223038" stroke-width="6" stroke-linecap="round"/>
+  <rect x="470" y="377" width="217" height="12" rx="6" fill="#F0A03C"/>
+
+  <!-- 行 3 全核睿频 -->
+  <rect x="48" y="420" width="864" height="58" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="50" y="433" width="4" height="32" rx="2" fill="#4FC3D9" opacity="0.6"/>
+  <text x="78" y="457" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">全核睿频</text>
+  <text x="300" y="457" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#8FA3AD">＜ 4.40 GHz</text>
+  <line x1="470" y1="449" x2="860" y2="449" stroke="#223038" stroke-width="6" stroke-linecap="round"/>
+  <rect x="470" y="443" width="217" height="12" rx="6" fill="#12313A" stroke="#4FC3D9" stroke-dasharray="6 5"/>
+
+  <!-- 行 4 全核同频 -->
+  <rect x="48" y="486" width="864" height="58" rx="12" fill="#131C21" stroke="#74D68C"/>
+  <rect x="50" y="499" width="4" height="32" rx="2" fill="#74D68C"/>
+  <text x="78" y="523" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">全核同频（用户）</text>
+  <text x="300" y="523" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#74D68C">4700 MHz</text>
+  <line x1="470" y1="515" x2="860" y2="515" stroke="#223038" stroke-width="6" stroke-linecap="round"/>
+  <rect x="470" y="509" width="346" height="12" rx="6" fill="#74D68C"/>
+
+  <text x="48" y="576" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">官方最大睿频只覆盖少核，47x 站在它之上，属于超频。</text>
+</svg>

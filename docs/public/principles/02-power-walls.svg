@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="figP02C-title figP02C-desc">
+  <title id="figP02C-title">三道墙与 LLC 补偿</title>
+  <desc id="figP02C-desc">频率掉了先看是哪个读数顶住：Package Power 顶到 PL1/PL2 是功耗墙，核心温度接近 Tjmax 是温度墙，IA Current 顶到上限是电流墙。满载瞬间的 Vdroop 属正常现象，LLC 只负责补偿。</desc>
+  <defs>
+    <pattern id="figP02C-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="figP02C-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="560" rx="18" fill="#0E1317"/>
+  <rect width="960" height="560" rx="18" fill="url(#figP02C-grid)"/>
+  <rect width="960" height="560" rx="18" fill="url(#figP02C-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="559" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.P02-03</text>
+  <text x="202" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">三道墙与 LLC 补偿</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">CH.02</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <rect x="352" y="96" width="256" height="44" rx="22" fill="#10181D" stroke="#4FC3D9"/>
+  <text x="480" y="124" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#C9D8DE">频率掉了吗</text>
+
+  <path d="M480 140V162M184 162H776M184 162V182M480 162V182M776 162V182" fill="none" stroke="#33454F" stroke-width="2"/>
+
+  <!-- 功耗墙 -->
+  <rect x="48" y="184" width="272" height="180" rx="18" fill="#131C21" stroke="#26343C"/>
+  <rect x="50" y="204" width="4" height="40" rx="2" fill="#F0A03C"/>
+  <text x="74" y="218" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">功耗墙</text>
+  <text x="74" y="250" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#4FC3D9">Package Power</text>
+  <text x="74" y="278" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">顶到 PL1 / PL2</text>
+  <text x="74" y="306" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">先降频或放宽上限</text>
+  <text x="74" y="334" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">不是核心不稳</text>
+
+  <!-- 温度墙 -->
+  <rect x="344" y="184" width="272" height="180" rx="18" fill="#131C21" stroke="#26343C"/>
+  <rect x="346" y="204" width="4" height="40" rx="2" fill="#EF7A6D"/>
+  <text x="370" y="218" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">温度墙</text>
+  <text x="370" y="250" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#4FC3D9">核心温度</text>
+  <text x="370" y="278" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">接近 Tjmax</text>
+  <text x="370" y="306" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">先看散热与风道</text>
+  <text x="370" y="334" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">Intel 4th Gen ≈ 100 °C</text>
+
+  <!-- 电流墙 -->
+  <rect x="640" y="184" width="272" height="180" rx="18" fill="#131C21" stroke="#26343C"/>
+  <rect x="642" y="204" width="4" height="40" rx="2" fill="#4FC3D9"/>
+  <text x="666" y="218" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">电流墙</text>
+  <text x="666" y="250" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#4FC3D9">IA Current</text>
+  <text x="666" y="278" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">顶到电流上限</text>
+  <text x="666" y="306" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">看 VRM 与供电</text>
+  <text x="666" y="334" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">不是 CPU 功耗墙</text>
+
+  <!-- LLC -->
+  <rect x="48" y="384" width="864" height="110" rx="18" fill="#131C21" stroke="#26343C"/>
+  <text x="76" y="418" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#E6EDF1">Vdroop 与 LLC</text>
+  <text x="76" y="448" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#E6EDF1">掉压是正常现象，LLC 只做补偿</text>
+  <text x="76" y="476" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#C9D8DE">拉满会带来瞬态过冲，判断看频率与错误</text>
+
+  <path d="M470 428H880" stroke="#566B76" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="470" y="412" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">目标电压</text>
+  <path d="M470 428H560L600 452H660L700 428H880" fill="none" stroke="#F0A03C" stroke-width="3" stroke-linejoin="round"/>
+  <text x="620" y="474" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#EF7A6D">掉压</text>
+  <text x="712" y="412" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#4FC3D9">LLC 补偿</text>
+
+  <text x="48" y="532" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">三面墙都不是，才说明当前设置还有余量——不要盲目加电压。</text>
+</svg>
