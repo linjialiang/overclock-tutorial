@@ -13,6 +13,7 @@ title: 术语表
 | BCLK | 基准时钟，通常 100 MHz | [频率与倍频](/principles/01-frequency) |
 | 倍频 | 频率 = BCLK × 倍频 | [频率与倍频](/principles/01-frequency) |
 | Turbo | 官方自动加速，按活跃核心数分档 | [频率与倍频](/principles/01-frequency) |
+| Turbo 分档（Turbo bin） | 活跃核心数与可用倍频的默认对应表；解锁平台可逐档覆盖 | [频率与倍频](/principles/01-frequency) |
 | 全核同频 | 所有核心锁在同一个倍频上 | [频率与倍频](/principles/01-frequency) |
 
 ## 电压与供电
@@ -22,10 +23,12 @@ title: 术语表
 | VID | CPU 按倍频/负载请求的电压 | [电压与供电](/principles/02-voltage) |
 | Vcore | 实际加到核心上的电压 | [电压与供电](/principles/02-voltage) |
 | VCCIN | 主板送给 CPU 的输入电压 | [电压与供电](/principles/02-voltage) |
-| FIVR | 片上调压器（Haswell 一代） | [电压与供电](/principles/02-voltage) |
+| FIVR | Haswell 架构引入的片上调压器 | [电压与供电](/principles/02-voltage) |
 | LLC | 负载线补偿，减少满载掉压 | [电压与供电](/principles/02-voltage) |
-| PL1 / PL2 | 长时间 / 短时间功耗上限 | [电压与供电](/principles/02-voltage) |
-| Tjmax / TCC | 温度保护点，约 100 °C | [电压与供电](/principles/02-voltage) |
+| SVID | CPU 与外部 VRM 之间的电压请求/反馈接口 | [电压与供电](/principles/02-voltage) |
+| PL1 / PL2 | 长时间 / 短时间功耗上限（Intel 平台） | [电压与供电](/principles/02-voltage) |
+| Tjmax | 结温上限；同一 SKU 固定，跨平台不同（如 Intel 4th Gen 约 100 °C、AMD Ryzen 7000 为 95 °C） | [电压与供电](/principles/02-voltage) |
+| TCC | 热控制电路：接近 Tjmax 时降频/降电压的机制，不是温度点 | [电压与供电](/principles/02-voltage) |
 
 ## 内存
 
@@ -34,9 +37,10 @@ title: 术语表
 | IMC | CPU 内的内存控制器 | [内存与 XMP](/principles/03-memory) |
 | SPD | 内存条上记录参数的小芯片 | [内存与 XMP](/principles/03-memory) |
 | JEDEC | 内存的默认标准档 | [内存与 XMP](/principles/03-memory) |
-| XMP | Intel 的内存扩展档 | [内存与 XMP](/principles/03-memory) |
-| EXPO | AMD 的内存扩展档 | [内存与 XMP](/principles/03-memory) |
+| XMP | Intel 的内存超频档：DDR3 时代 XMP、XMP 2.0（DDR4）、XMP 3.0（DDR5） | [内存与 XMP](/principles/03-memory) |
+| EXPO | AMD 的 DDR5 内存超频档（Socket AM5） | [内存与 XMP](/principles/03-memory) |
 | QVL | 主板厂商验证过的内存兼容列表 | [内存与 XMP](/principles/03-memory) |
+| VCCSA / VCCIO | CPU 系统代理 / IO 电压，影响 IMC 与高频内存（Intel 平台） | [内存与 XMP](/principles/03-memory) |
 
 ## 缓存与稳定性
 

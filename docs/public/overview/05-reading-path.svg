@@ -27,8 +27,8 @@
   <rect x="48" y="112" width="270" height="224" rx="12" fill="#131C21" stroke="#26343C"/>
   <text x="74" y="150" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="16" fill="#F0A03C" letter-spacing="1">STEP 01</text>
   <text x="74" y="196" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="30" fill="#E6EDF1">本章</text>
-  <text x="74" y="242" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">建立「三个对象 +</text>
-  <text x="74" y="268" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">四道墙」框架</text>
+  <text x="74" y="242" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">建立「三个显性对象</text>
+  <text x="74" y="268" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">+ 缓存 + 四道墙」</text>
 
   <!-- Arrow 1 -->
   <path d="M322 224H348" stroke="#F0A03C" stroke-width="2.5" marker-end="url(#fig05-arrow)"/>

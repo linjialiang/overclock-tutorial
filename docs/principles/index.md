@@ -6,10 +6,12 @@ title: 超频原理 · 章节导读
 
 这一部分讲"为什么"和"怎么判断"，不绑定某一台机器。九个章节可以按顺序读，也可以按问题跳读。
 
+原理篇以 Intel 桌面（Haswell 时代为主线）的倍频/电压模型为基础；现代混合架构和 AMD 的 PBO/Curve Optimizer 只做入口对照，具体选项以平台手册为准。
+
 | 章节 | 讲什么 | 什么时候读 |
 |---|---|---|
 | [01 频率与倍频](/principles/01-frequency) | 频率从哪来、Turbo 与全核、倍频和外频的区别 | 想知道"超频到底改的是哪个数" |
-| [02 电压与供电](/principles/02-voltage) | VCCIN / VID / Vcore、四种电压模式、LLC、功耗与温度 | 想弄懂电压、掉压和模式选择 |
+| [02 电压与供电](/principles/02-voltage) | VCCIN / VID / Vcore、电压模式、LLC、功耗与温度 | 想弄懂电压、掉压和模式选择 |
 | [03 内存与 XMP](/principles/03-memory) | SPD / JEDEC / XMP、时序、IMC、四条为什么难 | 想开 XMP 或手动超内存 |
 | [04 缓存与 Ring](/principles/04-cache) | Ring 的作用、缓存倍频、缓存不稳怎么测 | 核心稳了，想继续压延迟 |
 | [05 集成显卡](/principles/05-igpu) | iGPU 的倍频、电压、带宽瓶颈与取舍 | 想超核显，或在核显/独显间取舍 |
