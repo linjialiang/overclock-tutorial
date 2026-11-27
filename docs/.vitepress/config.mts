@@ -49,9 +49,15 @@ export default defineConfig({
         {
           text: '超友案例',
           items: [
-            { text: '案例说明', link: '/cases/' },
-            { text: '投稿模板与资源要求', link: '/cases/template' },
-            { text: '案例 01：i7-4790K + Z97-AR', link: '/cases/01-4790k-z97ar' }
+            { text: '案例区说明', link: '/cases/' },
+            {
+              text: 'i7-4790K + Z97-AR',
+              collapsed: false,
+              items: [
+                { text: '超频指导', link: '/cases/4790k-z97ar/guide' },
+                { text: '平台与案例', link: '/cases/4790k-z97ar/' }
+              ]
+            }
           ]
         }
       ],

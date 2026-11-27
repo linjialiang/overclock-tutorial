@@ -11,7 +11,7 @@
 1. **超频概述**：一章讲清楚超频在超什么、代价是什么、怎么读这份教程。
 2. **超频原理**：按主题分 9 章，平台无关，讲原理和判断方法。
 3. **烤机工具**：5 款工具各一页，用真实截图说明界面、读数和判读方法。
-4. **超友案例**：一位超友一章；第一篇是投稿模板与资源要求，案例 01 是 i7-4790K + Z97-AR。
+4. **超友案例**：按 CPU + 主板归组；每个平台先有独立的超频指导，再挂同平台案例。当前只有 i7-4790K + Z97-AR 的指导与平台页，案例位为空。
 
 ## 技术栈与命令
 
@@ -47,9 +47,10 @@ docs/
 │  ├─ 09-tuning.md             调参与体质
 │  └─ glossary.md              术语表
 ├─ cases/
-│  ├─ index.md                 案例说明与列表
-│  ├─ template.md              首篇：投稿模板与资源要求
-│  └─ 01-4790k-z97ar.md        案例 01
+│  ├─ index.md                 案例区总览与平台索引
+│  └─ 4790k-z97ar/
+│     ├─ index.md              平台页：规格、指导入口、案例列表
+│     └─ guide.md              超频指导：7 步顺序、每步判据、异常处理
 ├─ tools/
 │  ├─ index.md                 工具导读与选型表
 │  ├─ aida64.md                AIDA64 系统稳定性测试
@@ -57,7 +58,7 @@ docs/
 │  ├─ hwinfo.md                HWiNFO
 │  ├─ testmem5.md              TestMem5
 │  └─ memtest86plus.md         MemTest86+
-├─ public/cases/4790k-z97ar/   案例截图（7 张）
+├─ public/cases/<平台>/        案例截图（当前为空，等第一个投稿）
 ├─ public/tools/<tool>/        工具页真实截图（aida64 / cpuz / hwinfo / testmem5 / memtest86plus）
 └─ .vitepress/config.mts       导航、侧边栏、搜索、页脚
 ```
@@ -88,14 +89,17 @@ docs/
 - 不编造数据；没有实测就写“未测试”或标 `[经验]`。
 - 原理章结尾保留 `## 本章要点`（3–5 条）。
 - 一次只改一项、先记录默认值、稳定性以 WHEA/错误/真实应用为准，这些原则不要弱化。
-- 案例一人一章；同一人多次投稿合并更新，不另开新章。
+- 案例按 CPU + 主板归组：先写该平台的超频指导，再挂案例；同一平台多次投稿各占一篇，不另开平台。
+- 超频指导里的每个数值必须站得住：官方规格标 `[Intel]`/`[手册]`，社区做法标 `[经验]`，不写「安全电压上限」这类没有官方依据的数字。
 
 ### 文件与图片命名
 
 - 原理章：`NN-topic.md`，例如 `02-voltage.md`。
-- 案例章：`NN-平台简称.md`，例如 `01-4790k-z97ar.md`。
+- 平台页：`docs/cases/<CPU简称>-<主板简称>/index.md`，例如 `docs/cases/4790k-z97ar/index.md`。
+- 超频指导：同目录 `guide.md`。
+- 案例：同目录 `case-NN-简述.md`，例如 `case-01-daily-47x.md`。
 - 工具页：`docs/tools/<tool>.md`，例如 `testmem5.md`；工具截图为真实截图，放 `docs/public/tools/<tool>/`，图注必须写来源（本机 / 官方页 / 重绘）与软件版本。
-- 图片：`docs/public/cases/NN-平台简称/`，英文小写 + 连字符，例如 `cpu-adaptive-124.png`。
+- 图片：`docs/public/cases/<平台>/`，英文小写 + 连字符，例如 `cpu-adaptive-124.png`。
 - 示意图：`docs/public/overview/`（概述章）或对应章节目录，英文小写 + 连字符，例如 `01-targets.svg`；图内配色与编号自成系列，不依赖站点主题样式。
 - 引用图片用站点绝对路径：`/cases/4790k-z97ar/cpu-adaptive-124.png`、`/overview/01-targets.svg`。
 
@@ -120,28 +124,14 @@ docs/
 ### 已完成
 
 - VitePress 项目、默认主题、导航/侧边栏/本地搜索。
-- 概述 1 章；原理 9 章 + 导读 + 术语表；工具 5 页 + 导读；案例 3 篇（说明、模板、案例 01）。
-- 案例 01 配 7 张实测截图，含手动 / Tuner 两套本机配置。
+- 概述 1 章；原理 9 章 + 导读 + 术语表；工具 5 页 + 导读；案例区改为「平台 → 超频指导 → 案例」结构，当前 1 个平台（4790K + Z97-AR）的指导页 + 平台页，暂无案例。
 - 工具篇共 14 张图：AIDA64 2 张、CPU-Z 3 张、HWiNFO 2 张、TestMem5 6 张（1 张实机主界面 + 5 张手册附录 A 的中文对照重绘）、MemTest86+ 1 张官方图。中文对照图必须在图注写明「重绘，非软件原生界面」。
 - Git 已初始化，提交历史干净，工作区应为干净状态。
 
-### 案例 01 的关键结论（不要改错）
-
-平台：i7-4790K + ASUS Z97-AR（BIOS 3503）+ 4×8 GB DDR3-2400 + PA120 SE + WD500K。
-
-- CPU 47x，Adaptive + Additional Turbo 标称 1.24 V；另测 1.20 V。
-- 两组实测 **VID 都是 1.262 V、Vcore 都是 1.264 V**，频率、温度、功耗同一水平 → 低于原生 VID 的 Adaptive 目标没有改变实际电压。
-- 因此“1.20 V 跑了 39 分钟”实际是在 1.26 V 下跑的，不能当作 1.20 V 稳定。
-- 想真正降压：`Manual Mode` 固定 1.24 V 验证，稳定后改 `Offset Mode` + `Sign −`；只看 Vcore，不看 VID。
-- 缓存 40x，Cache Voltage Auto；按 ASUS 的 300 MHz 经验，核心稳定后可试 44x。
-- 内存 XMP 2400，DRAM 1.55 V 通过 1 小时内存测试；**1.50 V 开机直接蓝屏**，1.55 V 已是下限，日常建议留余量。
-- 满载约 97–101 W，最高 73–74 °C，室温 20–22 °C，散热不是瓶颈。
-
 ### 已知待办
 
-- 案例 01 还缺 BIOS 实拍/截图：Ai Tweaker 主界面、电压模式页、DRAM 电压/时序页。按 `docs/cases/template.md` 的截图清单补。
-- 案例 01 还缺 CPU-Z 内存/SPD 页截图：`template.md` 第 5 节和第 10 节最小清单都把它列为必交，需补内存频率、时序、通道、条数。
-- 更多超友案例：复制 `template.md` 为 `NN-平台简称.md`，一人一章。
+- 案例区等第一个真实投稿：按 `docs/cases/index.md` 的投稿要求准备材料，放进对应平台目录。
+- 新增平台时建 `docs/cases/<CPU>-<主板>/`，内含 `index.md`（平台页）与 `guide.md`（超频指导），并在侧边栏加一个可折叠分组。
 - 部署 GitHub Pages 前，在 `docs/.vitepress/config.mts` 加 `base: '/overclock-tutorial/'`，否则静态资源 404。
 - Git 远端已配置：`origin` = `git@github.com:linjialiang/overclock-tutorial.git`（SSH），`main` 已推送并跟踪 `origin/main`，之后改完 `git push` 即可。
 
@@ -158,7 +148,7 @@ docs/
 - 不要引入自定义 CSS、主题或 UI 框架；用户明确要求 VitePress 自带渲染样式。
 - 不要把本机数据写进原理篇。
 - 不要编造官方结论；手册没写的，标 `[经验]` 或写“只能实测”。
-- 不要删除 `docs/cases/template.md`：它是案例区的首篇。
+- 不要给 4790K 之类的型号编造「安全电压上限」；官方只给 Tjmax 与规格。
 - 不要提交 `node_modules/`、`docs/.vitepress/dist/`、`docs/.vitepress/cache/`（已在 `.gitignore`）。
 
 ## 旧资料位置（只读参考）
