@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" width="960" height="420" role="img" aria-labelledby="fig05-title fig05-desc">
   <title id="fig05-title">这份教程怎么读</title>
-  <desc id="fig05-desc">阅读路径分三步：先读本章建立对象与四道墙的框架，再按问题跳读原理篇九章，最后对照案例篇的真实配置与读数。</desc>
+  <desc id="fig05-desc">阅读路径分四步：先读概述建立对象与四道墙的框架，再按问题跳读原理篇九章，动手时按工具篇的界面说明跑测试读读数，最后对照案例篇的真实配置与读数。</desc>
   <defs>
     <pattern id="fig05-grid" width="24" height="24" patternUnits="userSpaceOnUse">
       <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
@@ -24,50 +24,64 @@
   <path d="M48 72H912" stroke="#2A3A43"/>
 
   <!-- Block 1 -->
-  <rect x="48" y="112" width="270" height="224" rx="12" fill="#131C21" stroke="#26343C"/>
-  <text x="74" y="150" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="16" fill="#F0A03C" letter-spacing="1">STEP 01</text>
-  <text x="74" y="196" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="30" fill="#E6EDF1">本章</text>
-  <text x="74" y="242" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">建立「三个显性对象</text>
-  <text x="74" y="268" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">+ 缓存 + 四道墙」</text>
+  <rect x="48" y="112" width="190" height="224" rx="12" fill="#131C21" stroke="#26343C"/>
+  <text x="70" y="150" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="16" fill="#F0A03C" letter-spacing="1">STEP 01</text>
+  <text x="70" y="196" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="28" fill="#E6EDF1">本章</text>
+  <text x="70" y="240" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">建立「三个</text>
+  <text x="70" y="266" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">显性对象 +</text>
+  <text x="70" y="292" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">缓存 + 四道墙」</text>
 
   <!-- Arrow 1 -->
-  <path d="M322 224H348" stroke="#F0A03C" stroke-width="2.5" marker-end="url(#fig05-arrow)"/>
+  <path d="M242 224H262" stroke="#F0A03C" stroke-width="2.5" marker-end="url(#fig05-arrow)"/>
 
   <!-- Block 2 -->
-  <rect x="358" y="112" width="300" height="224" rx="12" fill="#131C21" stroke="#26343C"/>
-  <text x="384" y="150" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="16" fill="#F0A03C" letter-spacing="1">STEP 02</text>
-  <text x="384" y="196" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="28" fill="#E6EDF1">原理篇 9 章</text>
+  <rect x="266" y="112" width="240" height="224" rx="12" fill="#131C21" stroke="#26343C"/>
+  <text x="290" y="150" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="16" fill="#F0A03C" letter-spacing="1">STEP 02</text>
+  <text x="290" y="196" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="26" fill="#E6EDF1">原理篇 9 章</text>
 
   <!-- 9 chapter chips -->
-  <rect x="384" y="216" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
-  <text x="399" y="235" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">01</text>
-  <rect x="422" y="216" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
-  <text x="437" y="235" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">02</text>
-  <rect x="460" y="216" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
-  <text x="475" y="235" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">03</text>
-  <rect x="384" y="250" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
-  <text x="399" y="269" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">04</text>
-  <rect x="422" y="250" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
-  <text x="437" y="269" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">05</text>
-  <rect x="460" y="250" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
-  <text x="475" y="269" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">06</text>
-  <rect x="384" y="284" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
-  <text x="399" y="303" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">07</text>
-  <rect x="422" y="284" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
-  <text x="437" y="303" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">08</text>
-  <rect x="460" y="284" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
-  <text x="475" y="303" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">09</text>
-  <text x="508" y="270" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">按问题跳读</text>
+  <rect x="292" y="216" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
+  <text x="307" y="235" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">01</text>
+  <rect x="330" y="216" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
+  <text x="345" y="235" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">02</text>
+  <rect x="368" y="216" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
+  <text x="383" y="235" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">03</text>
+  <rect x="292" y="250" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
+  <text x="307" y="269" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">04</text>
+  <rect x="330" y="250" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
+  <text x="345" y="269" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">05</text>
+  <rect x="368" y="250" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
+  <text x="383" y="269" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">06</text>
+  <rect x="292" y="284" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
+  <text x="307" y="303" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">07</text>
+  <rect x="330" y="284" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
+  <text x="345" y="303" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">08</text>
+  <rect x="368" y="284" width="30" height="26" rx="6" fill="#1B262C" stroke="#3A4E58"/>
+  <text x="383" y="303" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="15" fill="#8FA3AD">09</text>
+  <text x="412" y="270" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">按问题</text>
+  <text x="412" y="294" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">跳读</text>
 
   <!-- Arrow 2 -->
-  <path d="M662 224H688" stroke="#F0A03C" stroke-width="2.5" marker-end="url(#fig05-arrow)"/>
+  <path d="M510 224H530" stroke="#F0A03C" stroke-width="2.5" marker-end="url(#fig05-arrow)"/>
 
   <!-- Block 3 -->
-  <rect x="698" y="112" width="214" height="224" rx="12" fill="#131C21" stroke="#26343C"/>
-  <text x="724" y="150" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="16" fill="#F0A03C" letter-spacing="1">STEP 03</text>
-  <text x="724" y="196" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="28" fill="#E6EDF1">案例篇</text>
-  <text x="724" y="242" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">对照真实配置、</text>
-  <text x="724" y="268" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">BIOS 与读数</text>
+  <rect x="534" y="112" width="190" height="224" rx="12" fill="#131C21" stroke="#26343C"/>
+  <text x="556" y="150" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="16" fill="#F0A03C" letter-spacing="1">STEP 03</text>
+  <text x="556" y="196" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="26" fill="#E6EDF1">工具篇 5 件</text>
+  <text x="556" y="240" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">按真实界面</text>
+  <text x="556" y="266" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">跑测试、</text>
+  <text x="556" y="292" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">读读数</text>
 
-  <text x="480" y="384" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">原理篇不绑定平台；案例篇保留真实配置和数据。</text>
+  <!-- Arrow 3 -->
+  <path d="M728 224H748" stroke="#F0A03C" stroke-width="2.5" marker-end="url(#fig05-arrow)"/>
+
+  <!-- Block 4 -->
+  <rect x="752" y="112" width="160" height="224" rx="12" fill="#131C21" stroke="#26343C"/>
+  <text x="774" y="150" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="16" fill="#F0A03C" letter-spacing="1">STEP 04</text>
+  <text x="774" y="196" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="26" fill="#E6EDF1">案例篇</text>
+  <text x="774" y="240" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">对照真实</text>
+  <text x="774" y="266" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">配置、BIOS</text>
+  <text x="774" y="292" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">与读数</text>
+
+  <text x="480" y="384" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">原理篇不绑定平台；工具篇只讲怎么用；案例篇保留真实数据。</text>
 </svg>

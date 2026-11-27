@@ -23,6 +23,8 @@ title: 稳定性验证
 
 FPU/AVX 负载的发热和功耗通常高于普通 CPU 负载 `[经验]`，很多"日常没事、一跑就崩"的设置在这里暴露。
 
+具体用哪个工具制造这些负载、读数在哪个窗口看，见[烤机工具](/tools/)：CPU 与组合负载用 [AIDA64](/tools/aida64)，内存用 [TestMem5](/tools/testmem5) 或 [MemTest86+](/tools/memtest86plus)，全程用 [HWiNFO](/tools/hwinfo) 记读数。
+
 ### 时长只扩大覆盖范围
 
 | 时长 | 能说明什么 |

@@ -10,7 +10,8 @@
 
 1. **超频概述**：一章讲清楚超频在超什么、代价是什么、怎么读这份教程。
 2. **超频原理**：按主题分 9 章，平台无关，讲原理和判断方法。
-3. **超友案例**：一位超友一章；第一篇是投稿模板与资源要求，案例 01 是 i7-4790K + Z97-AR。
+3. **烤机工具**：5 款工具各一页，用真实截图说明界面、读数和判读方法。
+4. **超友案例**：一位超友一章；第一篇是投稿模板与资源要求，案例 01 是 i7-4790K + Z97-AR。
 
 ## 技术栈与命令
 
@@ -25,7 +26,7 @@ pnpm docs:build     # 构建，产物在 docs/.vitepress/dist
 pnpm docs:preview   # 预览构建产物
 ```
 
-构建成功的标志：`build complete`，当前应生成 **16 个内容页 + `404.html`，合计 17 个 HTML 文件**。
+构建成功的标志：`build complete`，当前应生成 **22 个内容页 + `404.html`，合计 23 个 HTML 文件**。
 
 ## 目录结构
 
@@ -49,7 +50,15 @@ docs/
 │  ├─ index.md                 案例说明与列表
 │  ├─ template.md              首篇：投稿模板与资源要求
 │  └─ 01-4790k-z97ar.md        案例 01
+├─ tools/
+│  ├─ index.md                 工具导读与选型表
+│  ├─ aida64.md                AIDA64 系统稳定性测试
+│  ├─ cpuz.md                  CPU-Z
+│  ├─ hwinfo.md                HWiNFO
+│  ├─ testmem5.md              TestMem5
+│  └─ memtest86plus.md         MemTest86+
 ├─ public/cases/4790k-z97ar/   案例截图（7 张）
+├─ public/tools/<tool>/        工具页真实截图（aida64 / cpuz / hwinfo / testmem5 / memtest86plus）
 └─ .vitepress/config.mts       导航、侧边栏、搜索、页脚
 ```
 
@@ -85,6 +94,7 @@ docs/
 
 - 原理章：`NN-topic.md`，例如 `02-voltage.md`。
 - 案例章：`NN-平台简称.md`，例如 `01-4790k-z97ar.md`。
+- 工具页：`docs/tools/<tool>.md`，例如 `testmem5.md`；工具截图为真实截图，放 `docs/public/tools/<tool>/`，图注必须写来源（本机 / 官方页 / 重绘）与软件版本。
 - 图片：`docs/public/cases/NN-平台简称/`，英文小写 + 连字符，例如 `cpu-adaptive-124.png`。
 - 示意图：`docs/public/overview/`（概述章）或对应章节目录，英文小写 + 连字符，例如 `01-targets.svg`；图内配色与编号自成系列，不依赖站点主题样式。
 - 引用图片用站点绝对路径：`/cases/4790k-z97ar/cpu-adaptive-124.png`、`/overview/01-targets.svg`。
@@ -110,8 +120,9 @@ docs/
 ### 已完成
 
 - VitePress 项目、默认主题、导航/侧边栏/本地搜索。
-- 概述 1 章；原理 9 章 + 导读 + 术语表；案例 3 篇（说明、模板、案例 01）。
+- 概述 1 章；原理 9 章 + 导读 + 术语表；工具 5 页 + 导读；案例 3 篇（说明、模板、案例 01）。
 - 案例 01 配 7 张实测截图，含手动 / Tuner 两套本机配置。
+- 工具篇配 9 张真实截图：AIDA64 稳定性测试 + Statistics、CPU-Z 处理器/内存/SPD、HWiNFO 传感器窗口 + 传感器设置、TestMem5 主界面、MemTest86+ 官方 v9 界面。
 - Git 已初始化，提交历史干净，工作区应为干净状态。
 
 ### 案例 01 的关键结论（不要改错）

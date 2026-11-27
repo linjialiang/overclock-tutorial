@@ -10,6 +10,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '超频概述', link: '/overview' },
       { text: '超频原理', link: '/principles/' },
+      { text: '烤机工具', link: '/tools/' },
       { text: '超友案例', link: '/cases/' }
     ],
     sidebar: {
@@ -31,6 +32,19 @@ export default defineConfig({
           ]
         }
       ],
+      '/tools/': [
+        {
+          text: '烤机工具',
+          items: [
+            { text: '工具导读', link: '/tools/' },
+            { text: 'AIDA64', link: '/tools/aida64' },
+            { text: 'CPU-Z', link: '/tools/cpuz' },
+            { text: 'HWiNFO', link: '/tools/hwinfo' },
+            { text: 'TestMem5', link: '/tools/testmem5' },
+            { text: 'MemTest86+', link: '/tools/memtest86plus' }
+          ]
+        }
+      ],
       '/cases/': [
         {
           text: '超友案例',
@@ -47,6 +61,7 @@ export default defineConfig({
           items: [
             { text: '超频概述', link: '/overview' },
             { text: '超频原理', link: '/principles/' },
+            { text: '烤机工具', link: '/tools/' },
             { text: '超友案例', link: '/cases/' }
           ]
         }
