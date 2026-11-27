@@ -18,7 +18,7 @@ title: i7-4790K + Z97-AR
 
 ## 这个平台要注意什么
 
-- **核心电压只有三种模式**：Z97-AR 手册 2-29 列出的 CPU Core Voltage 是 `Auto` / `Manual Mode` / `Offset Mode`；手册里的 Adaptive 与 `Additional Turbo` 属于**核显电压**（2-31），不要和核心电压混在一起 `[手册]`。
+- **核心电压只有三种模式**：Z97-AR 手册 2.5.17（2-29 页）列出的 CPU Core Voltage 是 `Auto` / `Manual Mode` / `Offset Mode`；手册里的 Adaptive 与 `Additional Turbo` 属于**核显电压**（2-30 / 2-31 页），不要和核心电压混在一起 `[手册]`。
 - **VCCIN 是独立一层**：这一代核心电压由片内调压器生成，LLC 通常作用在 VCCIN 一侧，对 Vcore 只是间接影响，详见[电压与供电](/principles/02-voltage)。
 - **四条 DDR3 更难稳**：满插时内存控制器压力更大，XMP 档位不一定能直接跑稳，需要按内存测试的结果判断。
 - **Tjmax 100 °C**：核心温度接近它就会触发降频，判断散热够不够看的是距 Tjmax 的余量，不是"摸着烫不烫" `[Intel]`。
@@ -44,7 +44,7 @@ title: i7-4790K + Z97-AR
 | 结论 | 来源 | 位置 |
 |---|---|---|
 | 4790K 核心/线程、频率、缓存、TDP、Tjmax | Intel ARK 产品页 | Core i7-4790K |
-| CPU Core Voltage 三种模式 | ASUS Z97-AR 用户手册 | 2-29 |
-| 核显 Adaptive / Additional Turbo | ASUS Z97-AR 用户手册 | 2-31 |
+| CPU Core Voltage 三种模式 | ASUS Z97-AR 用户手册（E9367） | 2.5.17（2-29） |
+| 核显 Adaptive / Additional Turbo | ASUS Z97-AR 用户手册（E9367） | 2-30 / 2-31 |
 | FIVR 与 VCCIN 关系 | 站内[电压与供电](/principles/02-voltage) | 两种架构一节 |
 | 内存满插的压力 | 站内[内存与 XMP](/principles/03-memory) | 四条为什么难 |
