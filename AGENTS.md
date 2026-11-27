@@ -25,7 +25,7 @@ npm run docs:build     # 构建，产物在 docs/.vitepress/dist
 npm run docs:preview   # 预览构建产物
 ```
 
-构建成功的标志：`build complete`，当前应生成 **17 个 HTML 页面**。
+构建成功的标志：`build complete`，当前应生成 **16 个内容页 + `404.html`，合计 17 个 HTML 文件**。
 
 ## 目录结构
 
@@ -126,9 +126,10 @@ docs/
 ### 已知待办
 
 - 案例 01 还缺 BIOS 实拍/截图：Ai Tweaker 主界面、电压模式页、DRAM 电压/时序页。按 `docs/cases/template.md` 的截图清单补。
+- 案例 01 还缺 CPU-Z 内存/SPD 页截图：`template.md` 第 5 节和第 10 节最小清单都把它列为必交，需补内存频率、时序、通道、条数。
 - 更多超友案例：复制 `template.md` 为 `NN-平台简称.md`，一人一章。
 - 部署 GitHub Pages 前，在 `docs/.vitepress/config.mts` 加 `base: '/overclock-tutorial/'`，否则静态资源 404。
-- 尚未推送到 GitHub 远端。
+- 还没有配置 Git 远端（`git remote -v` 为空），不是“已配置只差 push”；推送前需先 `git remote add origin ...`。
 
 ## 修改流程
 
