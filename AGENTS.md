@@ -129,7 +129,7 @@ docs/
 - 案例 01 还缺 CPU-Z 内存/SPD 页截图：`template.md` 第 5 节和第 10 节最小清单都把它列为必交，需补内存频率、时序、通道、条数。
 - 更多超友案例：复制 `template.md` 为 `NN-平台简称.md`，一人一章。
 - 部署 GitHub Pages 前，在 `docs/.vitepress/config.mts` 加 `base: '/overclock-tutorial/'`，否则静态资源 404。
-- 还没有配置 Git 远端（`git remote -v` 为空），不是“已配置只差 push”；推送前需先 `git remote add origin ...`。
+- Git 远端已配置：`origin` = `git@github.com:linjialiang/overclock-tutorial.git`（SSH），`main` 已推送并跟踪 `origin/main`，之后改完 `git push` 即可。
 
 ## 修改流程
 
