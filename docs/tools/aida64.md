@@ -21,7 +21,7 @@ AIDA64 的 **System Stability Test**（系统稳定性测试）是这份教程�
 |---|---|---|
 | 左上 | `Stress CPU`、`Stress FPU`、`Stress cache`、`Stress system memory`、`Stress local disks`、`Stress GPU(s)` | 勾哪几项决定压哪个部件，可组合 |
 | 中上 | `Date / Time`、`Status` | 每次开始/停止都记一行，用来确认测试真的跑起来了 |
-| 标签页 | `Temperatures`、`Cooling Fans`、`Voltages`、`Currents`、`Powers`、`Clocks`、`Unified`、`Statistics` | 官方手册点名的是前四个与 Statistics，其余为本版新增 `[官方页]` |
+| 标签页 | `Temperatures`、`Cooling Fans`、`Voltages`、`Currents`、`Powers`、`Clocks`、`Unified`、`Statistics` | 官方手册点名的是前四个与 Statistics，其余是本版界面里实际存在的标签 `[官方页]` |
 | 曲线区 | 温度曲线 + `CPU Usage / CPU Throttling` 曲线 | 看温度是否饱和、有没有出现节流 |
 | 底部 | `Start / Stop`、`Clear`、`Save`、`CPUID`、`Preferences`、`Elapsed Time` | `Save` 存报告，`Elapsed Time` 是本次时长 |
 
