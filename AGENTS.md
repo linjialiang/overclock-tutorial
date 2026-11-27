@@ -127,7 +127,7 @@ docs/
 
 ### 案例 01 的关键结论（不要改错）
 
-平台：i7-4790K + ASUS Z97-AR（BIOS 2801）+ 4×8 GB DDR3-2400 + PA120 SE + WD500K。
+平台：i7-4790K + ASUS Z97-AR（BIOS 3503）+ 4×8 GB DDR3-2400 + PA120 SE + WD500K。
 
 - CPU 47x，Adaptive + Additional Turbo 标称 1.24 V；另测 1.20 V。
 - 两组实测 **VID 都是 1.262 V、Vcore 都是 1.264 V**，频率、温度、功耗同一水平 → 低于原生 VID 的 Adaptive 目标没有改变实际电压。
