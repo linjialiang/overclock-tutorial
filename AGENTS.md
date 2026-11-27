@@ -26,7 +26,7 @@ pnpm docs:build     # 构建，产物在 docs/.vitepress/dist
 pnpm docs:preview   # 预览构建产物
 ```
 
-构建成功的标志：`build complete`，当前应生成 **22 个内容页 + `404.html`，合计 23 个 HTML 文件**。
+构建成功的标志：`build complete`，当前应生成 **23 个内容页 + `404.html`，合计 24 个 HTML 文件**。
 
 ## 目录结构
 
@@ -50,7 +50,8 @@ docs/
 │  ├─ index.md                 案例区总览与平台索引
 │  └─ 4790k-z97ar/
 │     ├─ index.md              平台页：规格、指导入口、案例列表
-│     └─ guide.md              超频指导：7 步顺序、每步判据、异常处理
+│     ├─ guide.md              超频指导：7 步顺序、每步判据、异常处理
+│     └─ case-01-daily-47x.md  案例 01：按指导顺序整理的实测记录（截图待补）
 ├─ tools/
 │  ├─ index.md                 工具导读与选型表
 │  ├─ aida64.md                AIDA64 系统稳定性测试
@@ -124,13 +125,14 @@ docs/
 ### 已完成
 
 - VitePress 项目、默认主题、导航/侧边栏/本地搜索。
-- 概述 1 章；原理 9 章 + 导读 + 术语表；工具 5 页 + 导读；案例区改为「平台 → 超频指导 → 案例」结构，当前 1 个平台（4790K + Z97-AR）的指导页 + 平台页，暂无案例。
+- 概述 1 章；原理 9 章 + 导读 + 术语表；工具 5 页 + 导读；案例区为「平台 → 超频指导 → 案例」结构，当前 1 个平台（4790K + Z97-AR）+ 1 篇案例（日常 47x，数据取自旧案例，8 张截图待补）。
 - 工具篇共 14 张图：AIDA64 2 张、CPU-Z 3 张、HWiNFO 2 张、TestMem5 6 张（1 张实机主界面 + 5 张手册附录 A 的中文对照重绘）、MemTest86+ 1 张官方图。中文对照图必须在图注写明「重绘，非软件原生界面」。
 - Git 已初始化，提交历史干净，工作区应为干净状态。
 
 ### 已知待办
 
-- 案例区等第一个真实投稿：按 `docs/cases/index.md` 的投稿要求准备材料，放进对应平台目录。
+- 案例 01 还缺 8 张截图（HWiNFO 满载 ×2、空闲、AIDA64 CPU/缓存/内存、CPU-Z 内存与 SPD、BIOS Ai Tweaker），补齐后替换文中的【待补图 N】占位。
+- 案例 01 还缺实测项：`Stress cache`、组合负载、冷启动/睡眠唤醒、真实应用、Manual/Offset 降压，补齐后更新对应步骤与结论。
 - 新增平台时建 `docs/cases/<CPU>-<主板>/`，内含 `index.md`（平台页）与 `guide.md`（超频指导），并在侧边栏加一个可折叠分组。
 - 部署 GitHub Pages 前，在 `docs/.vitepress/config.mts` 加 `base: '/overclock-tutorial/'`，否则静态资源 404。
 - Git 远端已配置：`origin` = `git@github.com:linjialiang/overclock-tutorial.git`（SSH），`main` 已推送并跟踪 `origin/main`，之后改完 `git push` 即可。

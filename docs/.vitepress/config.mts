@@ -55,7 +55,8 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: '超频指导', link: '/cases/4790k-z97ar/guide' },
-                { text: '平台与案例', link: '/cases/4790k-z97ar/' }
+                { text: '平台与案例', link: '/cases/4790k-z97ar/' },
+                { text: '案例 01：日常 47x', link: '/cases/4790k-z97ar/case-01-daily-47x' }
               ]
             }
           ]
