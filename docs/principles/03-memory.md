@@ -11,8 +11,8 @@ title: 内存与 XMP
 ## SPD、JEDEC 与 XMP 是什么关系
 
 - **SPD**：内存条上的一颗小芯片，记录这条内存的参数表。
-- **JEDEC**：内存行业的默认标准档。DDR3 常见默认是 1333 / 1600 MHz `[JEDEC/XMP]`。
-- **XMP**（Intel Extreme Memory Profile）：Intel 定义的扩展档，把厂商验证过的高频参数（频率、时序、电压）写进 SPD，让主板"一键读取" `[JEDEC/XMP]`。
+- **JEDEC**：内存行业的默认标准档。DDR3 常见默认是 1333 / 1600 MHz `[官方页]`。
+- **XMP**（Intel Extreme Memory Profile）：Intel 定义的扩展档，把厂商验证过的高频参数（频率、时序、电压）写进 SPD，让主板"一键读取" `[官方页]`。
 
 所以"开 XMP"不是主板随意加频，而是**主板把内存条自带的一组厂商预验证参数应用上**。它仍然属于内存超频：Intel 明确把 XMP 归为 memory overclocking，并提示可能影响处理器保修 `[Intel]`。这组参数是否在你的 CPU + 主板上稳定，是另一回事。
 
