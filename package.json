@@ -2,6 +2,7 @@
   "name": "overclock-tutorial",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@12.21.0",
   "type": "module",
   "description": "Beginner-friendly overclocking guide built with VitePress.",
   "engines": {

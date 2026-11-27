@@ -15,14 +15,14 @@
 ## 技术栈与命令
 
 - VitePress `1.6.4`，**只使用默认主题自带样式**，没有自定义 CSS/主题。
-- Node 18+（开发时使用 Node 26 / npm 11）。
+- Node 18+（开发时使用 Node 26 / pnpm 12）。
 - 本地搜索使用 VitePress 内置 local search。
 
 ```bash
-npm install
-npm run docs:dev       # 开发
-npm run docs:build     # 构建，产物在 docs/.vitepress/dist
-npm run docs:preview   # 预览构建产物
+pnpm install
+pnpm docs:dev       # 开发
+pnpm docs:build     # 构建，产物在 docs/.vitepress/dist
+pnpm docs:preview   # 预览构建产物
 ```
 
 构建成功的标志：`build complete`，当前应生成 **16 个内容页 + `404.html`，合计 17 个 HTML 文件**。
@@ -65,13 +65,13 @@ docs/
 
 正文必须区分来源，不要把经验写成官方结论：
 
-| 标记 | 用途 |
-|---|---|
-| `[Intel]` | Intel 官方规格或数据表 |
-| `[手册]` | 主板官方手册，尽量写页码/章节 |
-| `[官方页]` | 厂商产品页、官方指南 |
-| `[本机]` | 案例投稿人的实测数据 |
-| `[经验]` | 社区经验值，不是官方保证 |
+| 标记       | 用途                          |
+| ---------- | ----------------------------- |
+| `[Intel]`  | Intel 官方规格或数据表        |
+| `[手册]`   | 主板官方手册，尽量写页码/章节 |
+| `[官方页]` | 厂商产品页、官方指南          |
+| `[本机]`   | 案例投稿人的实测数据          |
+| `[经验]`   | 社区经验值，不是官方保证      |
 
 ### 写作规则
 
@@ -86,11 +86,13 @@ docs/
 - 原理章：`NN-topic.md`，例如 `02-voltage.md`。
 - 案例章：`NN-平台简称.md`，例如 `01-4790k-z97ar.md`。
 - 图片：`docs/public/cases/NN-平台简称/`，英文小写 + 连字符，例如 `cpu-adaptive-124.png`。
-- 引用图片用站点绝对路径：`/cases/4790k-z97ar/cpu-adaptive-124.png`。
+- 示意图：`docs/public/overview/`（概述章）或对应章节目录，英文小写 + 连字符，例如 `01-targets.svg`；图内配色与编号自成系列，不依赖站点主题样式。
+- 引用图片用站点绝对路径：`/cases/4790k-z97ar/cpu-adaptive-124.png`、`/overview/01-targets.svg`。
 
 ### 新增页面时
 
 1. 在对应目录创建 Markdown，开头写：
+
    ```md
    ---
    title: 页面标题
@@ -98,9 +100,10 @@ docs/
 
    # 页面标题
    ```
+
 2. 在 `docs/.vitepress/config.mts` 的对应 `sidebar` 数组里加条目，否则页面不会出现在侧边栏。
 3. 如果是原理章，同步更新 `docs/principles/index.md` 的导读表。
-4. 跑 `npm run docs:build`，确认无死链、页面数正确。
+4. 跑 `pnpm docs:build`，确认无死链、页面数正确。
 
 ## 当前状态
 
@@ -135,8 +138,8 @@ docs/
 
 1. 先读 `docs/.vitepress/config.mts` 和相关章节，确认现有结构。
 2. 改内容；原理篇保持平台无关，案例篇保留真实数据。
-3. `npm run docs:build` 必须通过；页面数变化时说明原因。
-4. 需要时 `npm run docs:preview -- --port 4173`，检查首页、章节、案例、图片是否 200。
+3. `pnpm docs:build` 必须通过；页面数变化时说明原因。
+4. 需要时 `pnpm docs:preview -- --port 4173`，检查首页、章节、案例、图片是否 200。
 5. 提交信息用 `docs: ...`，例如 `docs: add case 02`。
 
 ## 不要做的事

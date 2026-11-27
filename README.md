@@ -11,15 +11,15 @@
 ## 本地开发
 
 ```bash
-npm install
-npm run docs:dev
+pnpm install
+pnpm docs:dev
 ```
 
 构建与预览：
 
 ```bash
-npm run docs:build
-npm run docs:preview
+pnpm docs:build
+pnpm docs:preview
 ```
 
 ## 目录
