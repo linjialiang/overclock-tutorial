@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: Overclocking 101
-  text: 新手超频第一课
+  name: 新手超频指南
+  text: 从原理到案例的超频入门
   tagline: 先看懂原理，再动手；用真实案例把参数和结果对上。
   actions:
     - theme: brand

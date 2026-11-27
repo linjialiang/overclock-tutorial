@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: 'Overclocking 101',
+  title: '新手超频指南',
   description: '面向新手的超频教程：先看懂原理，再看超友案例。',
   cleanUrls: true,
   themeConfig: {
