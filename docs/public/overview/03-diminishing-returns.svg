@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="fig03-title fig03-desc">
+  <title id="fig03-title">收益递减、代价递增</title>
+  <desc id="fig03-desc">示意图：随频率提高，性能收益逐渐趋平，电压与温度代价越来越陡，中间标出可接受的甜点区。图中数据为示意，不是实测。</desc>
+  <defs>
+    <pattern id="fig03-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="fig03-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+    <marker id="fig03-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#566B76"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="560" rx="18" fill="#0E1317"/>
+  <rect width="960" height="560" rx="18" fill="url(#fig03-grid)"/>
+  <rect width="960" height="560" rx="18" fill="url(#fig03-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="559" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.03</text>
+  <text x="134" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">收益递减，代价递增</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">03 / 06</text>
+  <text x="912" y="96" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="17" fill="#566B76">示意图 · 非实测数据</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <!-- grid -->
+  <path d="M120 180H800M120 240H800M120 300H800M120 360H800" stroke="#1F2B32" stroke-dasharray="2 7"/>
+  <path d="M270 120V432M420 120V432M570 120V432M720 120V432" stroke="#1F2B32" stroke-dasharray="2 7"/>
+
+  <!-- axes -->
+  <path d="M120 120V432H800" stroke="#3A4E58" stroke-width="2"/>
+  <path d="M800 432H822" stroke="#566B76" stroke-width="2" marker-end="url(#fig03-arrow)"/>
+  <path d="M120 120V98" stroke="#566B76" stroke-width="2" marker-end="url(#fig03-arrow)"/>
+  <text x="120" y="94" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">相对量</text>
+  <text x="800" y="466" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#8FA3AD">频率 →</text>
+  <text x="170" y="462" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="17" fill="#8FA3AD">默认</text>
+  <text x="320" y="462" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="17" fill="#8FA3AD">+100</text>
+  <text x="470" y="462" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="17" fill="#8FA3AD">+200</text>
+  <text x="620" y="462" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="17" fill="#8FA3AD">+300 MHz</text>
+
+  <!-- sweet spot -->
+  <rect x="380" y="124" width="220" height="308" fill="#4FC3D9" opacity="0.06"/>
+  <path d="M380 124V432M600 124V432" stroke="#4FC3D9" stroke-dasharray="5 7" opacity="0.55"/>
+  <text x="490" y="172" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#4FC3D9">甜点区</text>
+  <text x="490" y="199" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="18" fill="#7FB9C6">收益还明显，代价还能接受</text>
+
+  <!-- annotation -->
+  <text x="148" y="152" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#E6EDF1">每 +100 MHz</text>
+  <text x="148" y="180" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#F0A03C">收益变小，代价变大</text>
+
+  <!-- curves -->
+  <path d="M120 396C230 330 330 282 440 258C540 236 650 230 800 228" stroke="#F0A03C" stroke-width="4" fill="none"/>
+  <path d="M120 424C250 420 400 410 520 378C640 346 720 282 800 186" stroke="#EF7A6D" stroke-width="4" fill="none"/>
+  <line x1="148" y1="218" x2="180" y2="218" stroke="#F0A03C" stroke-width="3"/>
+  <text x="190" y="224" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#F0A03C">性能收益</text>
+  <line x1="148" y1="252" x2="180" y2="252" stroke="#EF7A6D" stroke-width="3"/>
+  <text x="190" y="258" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#EF7A6D">电压 / 温度代价</text>
+
+  <text x="480" y="520" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#E6EDF1">目标不是数字最大，而是日常可接受的频率。</text>
+</svg>

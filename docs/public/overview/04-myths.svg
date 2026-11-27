@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" width="960" height="640" role="img" aria-labelledby="fig04-title fig04-desc">
+  <title id="fig04-title">五个常见误区与对应事实</title>
+  <desc id="fig04-desc">左侧是五个常见误区：电压越高越稳、频率高就一定快、能开机就是稳定、烤机通过就永久稳定、别人能跑我也能跑；右侧是对应事实。</desc>
+  <defs>
+    <pattern id="fig04-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="fig04-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="640" rx="18" fill="#0E1317"/>
+  <rect width="960" height="640" rx="18" fill="url(#fig04-grid)"/>
+  <rect width="960" height="640" rx="18" fill="url(#fig04-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="639" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.04</text>
+  <text x="134" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">五个常见误区</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">04 / 06</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <text x="78" y="104" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#EF7A6D">✗ 误区</text>
+  <text x="492" y="104" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="21" fill="#74D68C">✓ 事实</text>
+  <path d="M468 112V568" stroke="#2A3A43" stroke-dasharray="6 7"/>
+
+  <!-- Row 1 -->
+  <rect x="48" y="120" width="864" height="82" rx="10" fill="#131C21" stroke="#232B31"/>
+  <text x="76" y="170" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#EF7A6D">✗</text>
+  <text x="104" y="170" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#C9D4DA">电压越高越稳</text>
+  <text x="492" y="170" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#74D68C">✓</text>
+  <text x="520" y="170" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#E6EDF1">超过所需只会更热</text>
+
+  <!-- Row 2 -->
+  <rect x="48" y="210" width="864" height="82" rx="10" fill="#131C21" stroke="#232B31"/>
+  <text x="76" y="260" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#EF7A6D">✗</text>
+  <text x="104" y="260" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#C9D4DA">频率高就一定快</text>
+  <text x="492" y="260" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#74D68C">✓</text>
+  <text x="520" y="260" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#E6EDF1">内存、缓存、散热会抵消</text>
+
+  <!-- Row 3 -->
+  <rect x="48" y="300" width="864" height="82" rx="10" fill="#131C21" stroke="#232B31"/>
+  <text x="76" y="350" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#EF7A6D">✗</text>
+  <text x="104" y="350" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#C9D4DA">能开机就是稳定</text>
+  <text x="492" y="350" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#74D68C">✓</text>
+  <text x="520" y="350" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#E6EDF1">开机只代表最低负载能过</text>
+
+  <!-- Row 4 -->
+  <rect x="48" y="390" width="864" height="82" rx="10" fill="#131C21" stroke="#232B31"/>
+  <text x="76" y="440" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#EF7A6D">✗</text>
+  <text x="104" y="440" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#C9D4DA">烤机通过就永久稳定</text>
+  <text x="492" y="440" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#74D68C">✓</text>
+  <text x="520" y="440" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#E6EDF1">只覆盖已测负载和当时室温</text>
+
+  <!-- Row 5 -->
+  <rect x="48" y="480" width="864" height="82" rx="10" fill="#131C21" stroke="#232B31"/>
+  <text x="76" y="530" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#EF7A6D">✗</text>
+  <text x="104" y="530" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#C9D4DA">别人能跑我也能跑</text>
+  <text x="492" y="530" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#74D68C">✓</text>
+  <text x="520" y="530" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#E6EDF1">体质、主板、散热、室温都不同</text>
+
+  <text x="480" y="610" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#8FA3AD">五条分别对应电压、内存/缓存、稳定性、调参四章。</text>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="fig02-title fig02-desc">
+  <title id="fig02-title">四道墙同时成立才算超频成功</title>
+  <desc id="fig02-desc">频率达标、电压匹配、散热压得住、负载无错四道检查点全部通过，才能到达稳定运行；任一项不成立都会落到不算稳定。</desc>
+  <defs>
+    <pattern id="fig02-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="fig02-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+    <marker id="fig02-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#F0A03C"/>
+    </marker>
+    <marker id="fig02-arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#EF7A6D"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="560" rx="18" fill="#0E1317"/>
+  <rect width="960" height="560" rx="18" fill="url(#fig02-grid)"/>
+  <rect width="960" height="560" rx="18" fill="url(#fig02-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="559" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="50" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.02</text>
+  <text x="134" y="51" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">四道墙同时成立</text>
+  <text x="912" y="50" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">02 / 06</text>
+  <path d="M48 72H912" stroke="#2A3A43"/>
+
+  <!-- Checkpoint labels -->
+  <text x="168" y="132" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">频率达标</text>
+  <text x="352" y="132" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">电压匹配</text>
+  <text x="536" y="132" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">散热压得住</text>
+  <text x="720" y="132" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">负载无错</text>
+
+  <!-- Gates -->
+  <rect x="165" y="164" width="6" height="132" rx="3" fill="#4FC3D9"/>
+  <rect x="349" y="164" width="6" height="132" rx="3" fill="#4FC3D9"/>
+  <rect x="533" y="164" width="6" height="132" rx="3" fill="#4FC3D9"/>
+  <rect x="717" y="164" width="6" height="132" rx="3" fill="#4FC3D9"/>
+
+  <!-- Track -->
+  <path d="M88 230H840" stroke="#3A4E58" stroke-width="3"/>
+  <path d="M840 230H862" stroke="#F0A03C" stroke-width="3" marker-end="url(#fig02-arrow)"/>
+
+  <!-- Gate pass markers -->
+  <circle cx="168" cy="230" r="10" fill="#0E1317" stroke="#74D68C" stroke-width="3"/>
+  <circle cx="352" cy="230" r="10" fill="#0E1317" stroke="#74D68C" stroke-width="3"/>
+  <circle cx="536" cy="230" r="10" fill="#0E1317" stroke="#74D68C" stroke-width="3"/>
+  <circle cx="720" cy="230" r="10" fill="#0E1317" stroke="#74D68C" stroke-width="3"/>
+
+  <!-- Lamp -->
+  <circle cx="868" cy="230" r="20" fill="#74D68C" opacity="0.18"/>
+  <circle cx="868" cy="230" r="10" fill="#74D68C"/>
+  <text x="868" y="278" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="20" fill="#74D68C">稳定运行</text>
+
+  <!-- Gate explanations -->
+  <text x="168" y="332" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">不掉频</text>
+  <text x="352" y="332" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">不欠压、不硬撑</text>
+  <text x="536" y="332" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">温度与噪音可接受</text>
+  <text x="720" y="332" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#8FA3AD">无 WHEA / 报错 / 蓝屏</text>
+
+  <!-- Failure bypass -->
+  <path d="M100 230V408H744" stroke="#EF7A6D" stroke-width="2.5" stroke-dasharray="8 7" fill="none" marker-end="url(#fig02-arrow-red)"/>
+  <text x="470" y="392" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#EF7A6D">任一项不成立</text>
+  <rect x="756" y="380" width="132" height="56" rx="10" fill="#1A1213" stroke="#EF7A6D" stroke-dasharray="6 5"/>
+  <text x="822" y="416" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="22" fill="#EF7A6D">不算稳定</text>
+
+  <text x="480" y="486" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#E6EDF1">四条同时成立才算成功；前三条成立只是「能开机」。</text>
+  <text x="480" y="522" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="19" fill="#EF7A6D">靠高温硬跑 = 用寿命换频率</text>
+</svg>

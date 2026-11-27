@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 260" width="960" height="260" role="img" aria-labelledby="fig06-title fig06-desc">
+  <title id="fig06-title">动手前的三条提醒</title>
+  <desc id="fig06-desc">三条提醒：记录频率、电压、温度、内存等默认值；一次只改一项并记录结果；用 WHEA、长时负载、冷启动和真实应用判断稳定性。</desc>
+  <defs>
+    <pattern id="fig06-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B262C"/>
+    </pattern>
+    <pattern id="fig06-grid-major" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#233139"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="260" rx="18" fill="#0E1317"/>
+  <rect width="960" height="260" rx="18" fill="url(#fig06-grid)"/>
+  <rect width="960" height="260" rx="18" fill="url(#fig06-grid-major)"/>
+  <rect x="0.5" y="0.5" width="959" height="259" rx="18" fill="none" stroke="#2A3A43"/>
+
+  <text x="48" y="46" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C" letter-spacing="1">FIG.06</text>
+  <text x="134" y="47" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="24" fill="#E6EDF1">动手前的三条提醒</text>
+  <circle cx="806" cy="40" r="6" fill="#74D68C"/>
+  <text x="912" y="46" text-anchor="end" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="18" fill="#8FA3AD">06 / 06</text>
+  <path d="M48 66H912" stroke="#2A3A43"/>
+
+  <!-- Item 1 -->
+  <rect x="48" y="90" width="280" height="132" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="72" y="110" width="38" height="38" rx="9" fill="#F0A03C" opacity="0.12" stroke="#F0A03C"/>
+  <text x="91" y="137" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">1</text>
+  <text x="126" y="137" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#E6EDF1">记录默认值</text>
+  <text x="72" y="178" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="17" fill="#8FA3AD">频率、电压、温度、</text>
+  <text x="72" y="202" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="17" fill="#8FA3AD">内存参数</text>
+
+  <!-- Item 2 -->
+  <rect x="340" y="90" width="280" height="132" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="364" y="110" width="38" height="38" rx="9" fill="#F0A03C" opacity="0.12" stroke="#F0A03C"/>
+  <text x="383" y="137" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">2</text>
+  <text x="418" y="137" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#E6EDF1">一次只改一项</text>
+  <text x="364" y="178" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="17" fill="#8FA3AD">改完记录原始值，</text>
+  <text x="364" y="202" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="17" fill="#8FA3AD">出问题才能归因</text>
+
+  <!-- Item 3 -->
+  <rect x="632" y="90" width="280" height="132" rx="12" fill="#131C21" stroke="#26343C"/>
+  <rect x="656" y="110" width="38" height="38" rx="9" fill="#F0A03C" opacity="0.12" stroke="#F0A03C"/>
+  <text x="675" y="137" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="20" fill="#F0A03C">3</text>
+  <text x="710" y="137" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="23" fill="#E6EDF1">用数据判稳定</text>
+  <text x="656" y="178" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="17" fill="#8FA3AD">WHEA、长时负载、</text>
+  <text x="656" y="202" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="17" fill="#8FA3AD">冷启动、真实应用</text>
+</svg>
